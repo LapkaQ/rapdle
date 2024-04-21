@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-export default function game() {
+export default function Game() {
   const [data, setData] = useState([]);
   const [filtredData, setFiltredData] = useState([]);
   const [isLoading, setLoading] = useState(true);
