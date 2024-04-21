@@ -13,7 +13,6 @@ export default function Home() {
           setLoading(false);
         });
     }
-    // const raper = data[Math.floor(Math.random() * data.length)];
   }, []);
   const raperzy = data.map((raper) => (
     <div key={raper.id}>
