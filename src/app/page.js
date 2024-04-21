@@ -17,10 +17,7 @@ export default function Home() {
   const raperzy = data.map((raper) => (
     <div key={raper.id}>
       <img src={raper.img} alt="" className="h-60" />
-      <h1>
-        <strong>{raper.name}</strong>
-      </h1>{" "}
-      <br />{" "}
+      <h1 className="font-bold text-large">{raper.name}</h1> <br />{" "}
       <h2>
         Label:{" "}
         <strong>
