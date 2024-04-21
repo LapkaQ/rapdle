@@ -48,4 +48,15 @@ main {
   margin-top: 20px;
   border-radius: 10px;
   width: 100%;
+  padding: 10px;
+}
+.guessedInfo {
+  margin: 5px;
+  border-radius: 20px;
+  border: 1px solid white;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
