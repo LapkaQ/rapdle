@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-export default function game() {
+export default function Game() {
   const [data, setData] = useState([]);
   const [filtredData, setFiltredData] = useState([]);
   const [isLoading, setLoading] = useState(true);
@@ -16,11 +16,9 @@ export default function game() {
           setLoading(false);
         });
     }
-    // const raper = data[Math.floor(Math.random() * data.length)];
   }, []);
   useEffect(() => {
     if (data.length != 0) {
-      console.log(JSON.parse(JSON.stringify(data)).length);
       const raper = data[Math.floor(Math.random() * data.length)];
       console.log(raper);
       setRaper(raper);
