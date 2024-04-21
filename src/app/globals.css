@@ -3,31 +3,49 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-color: 18, 18, 18;
+  --foreground-rgb: 255, 255, 255;
+  --foreground2-rgb: 148, 148, 148;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --background-color: 18, 18, 18;
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-color));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guessInput {
+  outline: none;
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 3px solid white;
+}
+.raperHints {
+  background-color: transparent;
+  border: 3px solid white;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 100%;
 }

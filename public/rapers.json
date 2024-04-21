@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Bambi",
+    "placeofbirth": "Poznań",
+    "numberofalbums": 2,
+    "labels": ["Baila Ella Records"],
+    "gender": "Female",
+    "img": "rapers/bambi.png"
+  },
+  {
+    "id": 2,
+    "name": "Young Leosia",
+    "placeofbirth": "Szczecin",
+    "numberofalbums": 2,
+    "labels": ["Baila Ella Records"],
+    "gender": "Female",
+    "img": "rapers/youngleosia.png"
+  },
+  {
+    "id": 3,
+    "name": "Mata",
+    "placeofbirth": "Wrocław",
+    "numberofalbums": 6,
+    "labels": ["Gombao33", "SB Maffija"],
+    "gender": "Male",
+    "img": "rapers/mata.png"
+  },
+  {
+    "id": 4,
+    "name": "Chiavs",
+    "placeofbirth": "Łódź",
+    "numberofalbums": 3,
+    "labels": ["Globalheartz", "New Bad Label", "GUGU"],
+    "gender": "Male",
+    "img": "rapers/chivas.png"
+  },
+  {
+    "id": 5,
+    "name": "Otsochodzi",
+    "placeofbirth": "Warszawa",
+    "numberofalbums": 9,
+    "labels": ["Asfalt Records", "2020"],
+    "gender": "Male",
+    "img": "rapers/otsochodzi.png"
+  },
+  {
+    "id": 8,
+    "name": "Oki",
+    "placeofbirth": "Lubin",
+    "numberofalbums": 12,
+    "labels": ["2020"],
+    "gender": "Male",
+    "img": "rapers/oki.png"
+  },
+  {
+    "id": 9,
+    "name": "Young Igi",
+    "placeofbirth": "Gdynia",
+    "numberofalbums": 7,
+    "labels": ["Def Jam Poland YI Ent"],
+    "gender": "Male",
+    "img": "rapers/youngigi.png"
+  },
+  {
+    "id": 10,
+    "name": "Bedoes 2115",
+    "placeofbirth": "Bydgoszcz",
+    "numberofalbums": 5,
+    "labels": ["SBM Label", "2115 Label"],
+    "gender": "Male",
+    "img": "rapers/bedoes2115.png"
+  },
+  {
+    "id": 11,
+    "name": "Janusz Walczuk",
+    "placeofbirth": "Żoliborz",
+    "numberofalbums": 3,
+    "labels": ["SBM Label"],
+    "gender": "Male",
+    "img": "rapers/januszwalczuk.png"
+  },
+  {
+    "id": 12,
+    "name": "Waima",
+    "placeofbirth": "Kielce",
+    "numberofalbums": 2,
+    "labels": ["ZIOMALEO", "SME"],
+    "gender": "Male",
+    "img": "rapers/waima.png"
+  },
+  {
+    "id": 13,
+    "name": "Young Multi",
+    "placeofbirth": "Głubczyce",
+    "numberofalbums": 4,
+    "labels": ["My Music", "Young Family Label"],
+    "gender": "Male",
+    "img": "rapers/youngmulti.png"
+  }
+]
