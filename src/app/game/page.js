@@ -25,7 +25,6 @@ export default function Game() {
   useEffect(() => {
     if (data.length != 0 && randomRaper.length === 0) {
       const randomRaper = data[Math.floor(Math.random() * data.length)];
-      console.log(randomRaper);
       setRandomRaper(randomRaper);
     }
   }, [data]);
@@ -39,7 +38,6 @@ export default function Game() {
   };
   const handleClick = (raper) => {
     const newGuessedData = [...guessedData, raper];
-    console.log(newGuessedData);
     setGuessedData(newGuessedData);
 
     const updatedFilteredData = filtredData.filter(
@@ -49,7 +47,12 @@ export default function Game() {
 
     const updatedData = data.filter((rapper) => rapper.id !== raper.id);
     setData(updatedData);
+
+    if (raper.id === randomRaper.id) {
+      alert("Gratulacje, wygrałeś!");
+    }
   };
+
   return (
     <main className="flex flex-col">
       <div className="flex flex-col justify-center items-center">
@@ -86,21 +89,21 @@ export default function Game() {
                 <p className="categorie">Albumy</p>
                 <p className="categorie">Płeć</p>
               </div>
-              {guessedData.map((raper) => (
+              {guessedData.map((raper, index) => (
                 <div
                   className="flex flex-row items-center justify-between"
                   key={raper.id}
                 >
                   <img
                     src={raper.img}
-                    className={`guessedInfo relative ${
+                    className={`guessedInfo relative animate-fadeIn1 ${
                       raper.img !== randomRaper.img ? "incorrect" : "correct"
                     }`}
                     alt=""
                   />
                   {/* Year */}
                   <div
-                    className={`guessedInfo relative ${
+                    className={`guessedInfo relative animate-fadeIn2 ${
                       raper.year !== randomRaper.year ? "incorrect" : "correct"
                     }`}
                   >
@@ -111,7 +114,7 @@ export default function Game() {
                   </div>
                   {/* Labels */}
                   <div
-                    className={`guessedInfo relative ${
+                    className={`guessedInfo relative animate-fadeIn3 ${
                       raper.labels[0] === randomRaper.labels[0]
                         ? "correct"
                         : raper.labels.some((label) =>
@@ -121,13 +124,13 @@ export default function Game() {
                         : "incorrect"
                     }`}
                   >
-                    <h1 className="font-black grow text-center">
+                    <h1 className="font-black grow text-center ">
                       {raper.labels}
                     </h1>
                   </div>
                   {/* Place of birth */}
                   <div
-                    className={`guessedInfo relative ${
+                    className={`guessedInfo relative animate-fadeIn4 ${
                       raper.placeofbirth !== randomRaper.placeofbirth
                         ? "incorrect"
                         : "correct"
@@ -139,7 +142,7 @@ export default function Game() {
                   </div>
                   {/* Number of albums */}
                   <div
-                    className={`guessedInfo relative ${
+                    className={`guessedInfo relative animate-fadeIn5 ${
                       raper.numberofalbums !== randomRaper.numberofalbums
                         ? "incorrect"
                         : "correct"
@@ -170,7 +173,7 @@ export default function Game() {
 
                   {/* Gender */}
                   <div
-                    className={`guessedInfo relative ${
+                    className={`guessedInfo relative animate-fadeIn6 ${
                       raper.gender !== randomRaper.gender
                         ? "incorrect"
                         : "correct"
