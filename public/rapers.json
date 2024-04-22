@@ -6,7 +6,8 @@
     "numberofalbums": 2,
     "labels": ["Baila Ella Records"],
     "gender": "Female",
-    "img": "rapers/bambi.png"
+    "img": "rapers/bambi.png",
+    "year": 2003
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "numberofalbums": 2,
     "labels": ["Baila Ella Records"],
     "gender": "Female",
-    "img": "rapers/youngleosia.png"
+    "img": "rapers/youngleosia.png",
+    "year": 1998
   },
   {
     "id": 3,
@@ -24,25 +26,38 @@
     "numberofalbums": 6,
     "labels": ["Gombao33", "SB Maffija"],
     "gender": "Male",
-    "img": "rapers/mata.png"
+    "img": "rapers/mata.png",
+    "year": 2000
   },
   {
     "id": 4,
     "name": "Chiavs",
     "placeofbirth": "Łódź",
     "numberofalbums": 3,
-    "labels": ["Globalheartz", "New Bad Label", "GUGU"],
+    "labels": ["GUGU", "Globalheartz", "New Bad Label"],
     "gender": "Male",
-    "img": "rapers/chivas.png"
+    "img": "rapers/chivas.png",
+    "year": 1998
   },
   {
     "id": 5,
     "name": "Otsochodzi",
     "placeofbirth": "Warszawa",
     "numberofalbums": 9,
-    "labels": ["Asfalt Records", "2020"],
+    "labels": ["2020", "Asfalt Records"],
     "gender": "Male",
-    "img": "rapers/otsochodzi.png"
+    "img": "rapers/otsochodzi.png",
+    "year": 1996
+  },
+  {
+    "id": 6,
+    "name": "Taco Hemingway",
+    "placeofbirth": "Kair",
+    "numberofalbums": 16,
+    "labels": ["Taco Corp", "2020", "Asfalt Records"],
+    "gender": "Male",
+    "img": "rapers/tacohemingway.png",
+    "year": 1990
   },
   {
     "id": 8,
@@ -51,7 +66,8 @@
     "numberofalbums": 12,
     "labels": ["2020"],
     "gender": "Male",
-    "img": "rapers/oki.png"
+    "img": "rapers/oki.png",
+    "year": 1998
   },
   {
     "id": 9,
@@ -60,16 +76,18 @@
     "numberofalbums": 7,
     "labels": ["Def Jam Poland YI Ent"],
     "gender": "Male",
-    "img": "rapers/youngigi.png"
+    "img": "rapers/youngigi.png",
+    "year": 1999
   },
   {
     "id": 10,
     "name": "Bedoes 2115",
     "placeofbirth": "Bydgoszcz",
     "numberofalbums": 5,
-    "labels": ["SBM Label", "2115 Label"],
+    "labels": ["2115 Label", "SBM Label"],
     "gender": "Male",
-    "img": "rapers/bedoes2115.png"
+    "img": "rapers/bedoes2115.png",
+    "year": 1998
   },
   {
     "id": 11,
@@ -78,7 +96,8 @@
     "numberofalbums": 3,
     "labels": ["SBM Label"],
     "gender": "Male",
-    "img": "rapers/januszwalczuk.png"
+    "img": "rapers/januszwalczuk.png",
+    "year": 1998
   },
   {
     "id": 12,
@@ -87,15 +106,17 @@
     "numberofalbums": 2,
     "labels": ["ZIOMALEO", "SME"],
     "gender": "Male",
-    "img": "rapers/waima.png"
+    "img": "rapers/waima.png",
+    "year": 2004
   },
   {
     "id": 13,
     "name": "Young Multi",
     "placeofbirth": "Głubczyce",
     "numberofalbums": 4,
-    "labels": ["My Music", "Young Family Label"],
+    "labels": ["Young Family Label", "My Music"],
     "gender": "Male",
-    "img": "rapers/youngmulti.png"
+    "img": "rapers/youngmulti.png",
+    "year": 1997
   }
 ]

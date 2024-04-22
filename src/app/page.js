@@ -14,6 +14,7 @@ export default function Home() {
         });
     }
   }, []);
+  const thisYear = new Date().getFullYear();
   const raperzy = data.map((raper) => (
     <div key={raper.id}>
       <img src={raper.img} alt="zdj" className="h-60" />
@@ -31,6 +32,9 @@ export default function Home() {
               ))}
         </strong>
       </h2>
+      <p>
+        Wiek: <strong>{thisYear - raper.year}</strong>
+      </p>
       <p>
         Miejsce urodzenia: <strong>{raper.placeofbirth}</strong>
       </p>
