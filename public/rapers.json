@@ -53,11 +53,21 @@
     "id": 6,
     "name": "Taco Hemingway",
     "placeofbirth": "Kair",
-    "numberofalbums": 16,
+    "numberofalbums": 4,
     "labels": ["Taco Corp", "2020", "Asfalt Records"],
     "gender": "Male",
     "img": "rapers/tacohemingway.png",
     "year": 1990
+  },
+  {
+    "id": 7,
+    "name": "Fukaj",
+    "placeofbirth": "Szczecin",
+    "numberofalbums": 16,
+    "labels": ["SBM Label"],
+    "gender": "Male",
+    "img": "rapers/fukaj.png",
+    "year": 2003
   },
   {
     "id": 8,
@@ -114,9 +124,29 @@
     "name": "Young Multi",
     "placeofbirth": "Głubczyce",
     "numberofalbums": 4,
-    "labels": ["Young Family Label", "My Music"],
+    "labels": ["YoungFamilyLabel", "My Music"],
     "gender": "Male",
     "img": "rapers/youngmulti.png",
     "year": 1997
+  },
+  {
+    "id": 14,
+    "name": "Kinny Zimmer",
+    "placeofbirth": "...",
+    "numberofalbums": 1,
+    "labels": ["SBM Label"],
+    "gender": "Male",
+    "img": "rapers/kinnyzimmer.png",
+    "year": 1999
+  },
+  {
+    "id": 15,
+    "name": "White 2115",
+    "placeofbirth": "Milanówek",
+    "numberofalbums": 5,
+    "labels": ["2115 Label", "SBM Label"],
+    "gender": "Male",
+    "img": "rapers/white2115.png",
+    "year": 1996
   }
 ]

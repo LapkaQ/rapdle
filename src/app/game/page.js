@@ -147,9 +147,25 @@ export default function Game() {
                       raper.year !== randomRaper.year ? "incorrect" : "correct"
                     }`}
                   >
-                    {" "}
-                    <h1 className="font-black grow text-center">
+                    <h1 className="font-black text-5xl">
                       {thisYear - raper.year}
+                    </h1>
+                    <h1 className="icon material-symbols-outlined">
+                      {thisYear - raper.year !== thisYear - randomRaper.year ? (
+                        thisYear - raper.year < thisYear - randomRaper.year ? (
+                          <img
+                            className="opacity-20"
+                            src="icons/arrowup.png"
+                            alt="Arrow Up"
+                          />
+                        ) : (
+                          <img
+                            className="opacity-20"
+                            src="icons/arrowdown.png"
+                            alt="Arrow Down"
+                          />
+                        )
+                      ) : null}
                     </h1>
                   </div>
                   {/* Labels */}
@@ -164,7 +180,7 @@ export default function Game() {
                         : "incorrect"
                     }`}
                   >
-                    <h1 className="font-black grow text-center overflow-hidden hover:overflow-visible">
+                    <h1 className="font-black text-center overflow-hidden hover:overflow-visible hover:text-ellipsis">
                       {raper.labels.length == 1
                         ? raper.labels
                         : raper.labels
@@ -196,8 +212,7 @@ export default function Game() {
                       {raper.numberofalbums}
                     </h1>
                     <h1 className="icon material-symbols-outlined">
-                      {raper.numberofalbums !== randomRaper.numberofalbums &&
-                      raper.numberofalbums !== randomRaper.numberofalbums ? (
+                      {raper.numberofalbums !== randomRaper.numberofalbums ? (
                         raper.numberofalbums < randomRaper.numberofalbums ? (
                           <img
                             className="opacity-20"
