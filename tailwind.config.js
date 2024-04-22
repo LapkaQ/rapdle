@@ -19,6 +19,7 @@ module.exports = {
         fadeIn4: "0.5s fadeIn 1.5s ease-in-out forwards",
         fadeIn5: "0.5s fadeIn 2s ease-in-out forwards",
         fadeIn6: "0.5s fadeIn 2.5s ease-in-out forwards",
+        fadeIn7: "0.5s fadeIn 3s ease-in-out forwards",
       },
     },
   },

@@ -86,7 +86,51 @@ main {
   align-items: center;
   text-shadow: 0px 0px 2px rgb(255, 255, 255);
 }
-
+.blurbg {
+  opacity: 0;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.353);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alertInfo {
+  position: relative;
+  height: 200px;
+  width: 500px;
+  border-radius: 20px;
+  border: 3px solid rgb(2, 128, 4);
+  background-color: rgba(0, 255, 51, 0.205);
+  box-shadow: 0px 0px 10px 10px black, 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 800;
+  text-shadow: 0px 0px 2px white;
+}
+#buttonCloseAlert {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  text-shadow: 0px 0px 2px white;
+  background-color: rgb(255, 0, 0, 0.5);
+  box-shadow: -5px 5px 10px rgba(255, 0, 0, 0.288);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 20px;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -8,7 +8,9 @@ export default function Game() {
   const [guessedData, setGuessedData] = useState([]);
   const [isLoading, setLoading] = useState(true);
   const [randomRaper, setRandomRaper] = useState([]);
-  const [inputValue, setInputValue] = useState(0);
+  const [inputValue, setInputValue] = useState("");
+  const [isWin, setIsWin] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   const thisYear = new Date().getFullYear();
 
@@ -49,15 +51,53 @@ export default function Game() {
     setData(updatedData);
 
     if (raper.id === randomRaper.id) {
-      alert("Gratulacje, wygrałeś!");
+      setIsWin(true);
+    }
+
+    setInputValue("");
+  };
+  const closeAlert = () => {
+    setIsWin(false);
+    setDisabled(true);
+  };
+  const enterClick = (e) => {
+    if (e.key == "Enter") {
+      if (filtredData.length > 0) {
+        const raper = filtredData[0];
+        handleClick(raper);
+      }
     }
   };
-
   return (
     <main className="flex flex-col">
+      {isWin && (
+        <div className="blurbg animate-fadeIn7">
+          <div className="alertInfo">
+            Wygrałeś!
+            <button id="buttonCloseAlert" onClick={closeAlert}>
+              X
+            </button>
+            <div className="flex flex-row font-normal">
+              <img
+                src={randomRaper.img}
+                alt=""
+                className="w-20 p-2 rounded-3xl"
+              />
+              <p className="">{randomRaper.name}</p>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="flex flex-col justify-center items-center">
         <h1 className="font-black text-2xl">Zgadnij dzisiejszego rapera</h1>
-        <input className="guessInput" type="text" onChange={handleChange} />
+        <input
+          className="guessInput"
+          type="text"
+          onChange={handleChange}
+          disabled={isWin ? true : disabled}
+          value={inputValue}
+          onKeyDown={enterClick}
+        />
         <p className="absolute bottom-0 left-0">
           {randomRaper.name},{randomRaper.labels},{randomRaper.placeofbirth},
           {randomRaper.numberofalbums},{randomRaper.gender}
@@ -124,8 +164,12 @@ export default function Game() {
                         : "incorrect"
                     }`}
                   >
-                    <h1 className="font-black grow text-center ">
-                      {raper.labels}
+                    <h1 className="font-black grow text-center overflow-hidden hover:overflow-visible">
+                      {raper.labels.length == 1
+                        ? raper.labels
+                        : raper.labels
+                            .filter((label, index) => index < 2)
+                            .join(", ")}
                     </h1>
                   </div>
                   {/* Place of birth */}
