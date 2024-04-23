@@ -142,7 +142,7 @@ main {
 .infoTip {
   position: absolute;
   text-align: center;
-  bottom: 50;
+  bottom: 50px;
   /* background-color: rgb(34, 34, 34); */
   background: linear-gradient(0deg, rgb(124, 11, 237), transparent);
   backdrop-filter: blur(10);
