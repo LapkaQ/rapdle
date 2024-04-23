@@ -101,8 +101,7 @@ main {
 }
 .alertInfo {
   position: relative;
-  height: 200px;
-  width: 500px;
+  padding: 20px 100px;
   border-radius: 20px;
   border: 3px solid rgb(2, 128, 4);
   background-color: rgba(0, 255, 51, 0.205);
@@ -138,4 +137,32 @@ main {
   to {
     opacity: 1;
   }
+}
+
+.infoTip {
+  position: absolute;
+  text-align: center;
+  bottom: 50;
+  /* background-color: rgb(34, 34, 34); */
+  background: linear-gradient(0deg, rgb(124, 11, 237), transparent);
+  backdrop-filter: blur(10);
+  padding: 10px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+.infoTip::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  background: linear-gradient(-45deg, rgb(124, 11, 237) 40%, transparent 50%);
+  bottom: -7;
+  padding: 10px;
+  border-radius: 5px;
+
+  width: 0px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(45deg);
 }

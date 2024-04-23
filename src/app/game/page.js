@@ -11,6 +11,14 @@ export default function Game() {
   const [inputValue, setInputValue] = useState("");
   const [isWin, setIsWin] = useState(false);
   const [disabled, setDisabled] = useState(false);
+  const [hoveredInfo, setHoveredInfo] = useState({
+    zdjecie: false,
+    wiek: false,
+    label: false,
+    birthplace: false,
+    albumy: false,
+    plec: false,
+  });
 
   const thisYear = new Date().getFullYear();
 
@@ -68,6 +76,57 @@ export default function Game() {
       }
     }
   };
+  const handleMouseEnter = (key) => {
+    setHoveredInfo((prev) => ({
+      ...prev,
+      [key]: true,
+    }));
+  };
+
+  const handleMouseLeave = (key) => {
+    setHoveredInfo((prev) => ({
+      ...prev,
+      [key]: false,
+    }));
+  };
+
+  const InfoTip = (props) => {
+    if (props.tekst == "labelInfo") {
+      return (
+        <div className="infoTip">
+          <div className="flex flex-row justify-center items-start">
+            <p className="correct p-2 rounded-md"></p>
+            <p>Są w tym samym labelu</p>
+          </div>
+          <div className="flex flex-row justify-center items-start">
+            <p className="middle p-2 rounded-md"></p>
+            <p>Mieli wspolny label</p>
+          </div>
+          <div className="flex flex-row justify-center items-start">
+            <p className="incorrect p-2 rounded-md"></p>
+            <p>Brak powiązań</p>
+          </div>
+        </div>
+      );
+    } else if (props.tekst == "birthplace") {
+      return (
+        <div className="infoTip">
+          <div className="flex flex-row justify-center items-start">
+            <p className="correct p-2 rounded-md"></p>
+            <p>Urodzeni w tym samym mieście</p>
+          </div>
+          <div className="flex flex-row justify-center items-start">
+            <p className="middle p-2 rounded-md"></p>
+            <p>Urodzeni w tym samym województwie </p>
+          </div>
+          <div className="flex flex-row justify-center items-start">
+            <p className="incorrect p-2 rounded-md"></p>
+            <p>Brak powiązań</p>
+          </div>
+        </div>
+      );
+    }
+  };
   return (
     <main className="flex flex-col">
       {isWin && (
@@ -85,10 +144,15 @@ export default function Game() {
               />
               <p className="">{randomRaper.name}</p>
             </div>
+            <div className="flex flex-row font-normal">
+              <p className="flex flex-row ">
+                Próby: <p className="font-bold">{guessedData.length}</p>
+              </p>
+            </div>
           </div>
         </div>
       )}
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center content">
         <h1 className="font-black text-2xl">Zgadnij dzisiejszego rapera</h1>
         <input
           className="guessInput"
@@ -98,10 +162,10 @@ export default function Game() {
           value={inputValue}
           onKeyDown={enterClick}
         />
-        <p className="absolute bottom-0 left-0">
+        <div className="absolute bottom-0 left-0">
           {randomRaper.name},{randomRaper.labels},{randomRaper.placeofbirth},
           {randomRaper.numberofalbums},{randomRaper.gender}
-        </p>
+        </div>
         {/* LISA RAPEROW */}
         {inputValue != 0 && filtredData.length > 0 && (
           <div className="raperHints cursor-pointer">
@@ -121,13 +185,65 @@ export default function Game() {
         {guessedData.length > 0 && (
           <>
             <div className="raperHints">
-              <div className="flex flex-row items-center justify-between">
-                <p className="categorie">Zdjecie</p>
-                <p className="categorie">Wiek</p>
-                <p className="categorie">Label</p>
-                <p className="categorie text-center">Gdzie urodzony</p>
-                <p className="categorie">Albumy</p>
-                <p className="categorie">Płeć</p>
+              <div className="flex flex-row items-center justify-between relative">
+                <div className="categorie relative">
+                  {hoveredInfo.zdjecie && (
+                    <InfoTip tekst="asdasdasdasdaskdjaskdaskdjaskdjaskdjaskds" />
+                  )}
+                  <p
+                    onMouseEnter={() => handleMouseEnter("zdjecie")}
+                    onMouseLeave={() => handleMouseLeave("zdjecie")}
+                  >
+                    Zdjecie
+                  </p>
+                </div>
+                <div className="categorie relative">
+                  {hoveredInfo.wiek && (
+                    <InfoTip tekst="asdad asdad ada dada dad" />
+                  )}
+                  <p
+                    onMouseEnter={() => handleMouseEnter("wiek")}
+                    onMouseLeave={() => handleMouseLeave("wiek")}
+                  >
+                    Wiek
+                  </p>
+                </div>
+                <div className="categorie relative">
+                  {hoveredInfo.label && <InfoTip tekst="labelInfo" />}
+                  <p
+                    onMouseEnter={() => handleMouseEnter("label")}
+                    onMouseLeave={() => handleMouseLeave("label")}
+                  >
+                    Label
+                  </p>
+                </div>
+                <div className="categorie text-center relative">
+                  {hoveredInfo.birthplace && <InfoTip tekst="birthplace" />}
+                  <p
+                    onMouseEnter={() => handleMouseEnter("birthplace")}
+                    onMouseLeave={() => handleMouseLeave("birthplace")}
+                  >
+                    Gdzie urodzony
+                  </p>
+                </div>
+                <div className="categorie relative">
+                  {hoveredInfo.albumy && <InfoTip tekst="albumy" />}
+                  <p
+                    onMouseEnter={() => handleMouseEnter("albumy")}
+                    onMouseLeave={() => handleMouseLeave("albumy")}
+                  >
+                    Albumy
+                  </p>
+                </div>
+                <div className="categorie relative">
+                  {hoveredInfo.plec && <InfoTip tekst="plec" />}
+                  <p
+                    onMouseEnter={() => handleMouseEnter("plec")}
+                    onMouseLeave={() => handleMouseLeave("plec")}
+                  >
+                    Płeć
+                  </p>
+                </div>
               </div>
               {guessedData.map((raper, index) => (
                 <div
@@ -192,7 +308,9 @@ export default function Game() {
                   <div
                     className={`guessedInfo relative animate-fadeIn4 ${
                       raper.placeofbirth !== randomRaper.placeofbirth
-                        ? "incorrect"
+                        ? raper.voivodeship !== randomRaper.voivodeship
+                          ? "incorrect"
+                          : "middle"
                         : "correct"
                     }`}
                   >
