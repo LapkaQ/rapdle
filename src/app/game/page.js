@@ -164,7 +164,8 @@ export default function Game() {
         />
         <div className="absolute bottom-0 left-0">
           {randomRaper.name},{randomRaper.labels},{randomRaper.placeofbirth},
-          {randomRaper.numberofalbums},{randomRaper.gender}
+          {randomRaper.voivodeship},{randomRaper.numberofalbums},
+          {randomRaper.gender}
         </div>
         {/* LISA RAPEROW */}
         {inputValue != 0 && filtredData.length > 0 && (
