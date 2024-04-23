@@ -155,7 +155,7 @@ main {
   position: absolute;
   content: "";
   background: linear-gradient(-45deg, rgb(124, 11, 237) 40%, transparent 50%);
-  bottom: -7;
+  bottom: -7px;
   padding: 10px;
   border-radius: 5px;
 
