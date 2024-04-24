@@ -164,8 +164,7 @@ export default function Game() {
         />
         <div className="absolute bottom-0 left-0">
           {randomRaper.name},{randomRaper.labels},{randomRaper.placeofbirth},
-          {randomRaper.voivodeship},{randomRaper.numberofalbums},
-          {randomRaper.gender}
+          {randomRaper.voivodeship},{randomRaper.albums},{randomRaper.gender}
         </div>
         {/* LISA RAPEROW */}
         {inputValue != 0 && filtredData.length > 0 && (
@@ -322,17 +321,17 @@ export default function Game() {
                   {/* Number of albums */}
                   <div
                     className={`guessedInfo relative animate-fadeIn5 ${
-                      raper.numberofalbums !== randomRaper.numberofalbums
+                      raper.albums.length !== randomRaper.albums.length
                         ? "incorrect"
                         : "correct"
                     }`}
                   >
                     <h1 className="font-black text-5xl">
-                      {raper.numberofalbums}
+                      {raper.albums.length}
                     </h1>
                     <h1 className="icon material-symbols-outlined">
-                      {raper.numberofalbums !== randomRaper.numberofalbums ? (
-                        raper.numberofalbums < randomRaper.numberofalbums ? (
+                      {raper.albums.length !== randomRaper.albums.length ? (
+                        raper.albums.length < randomRaper.albums.length ? (
                           <img
                             className="opacity-20"
                             src="icons/arrowup.png"

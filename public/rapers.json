@@ -4,7 +4,12 @@
     "name": "Bambi",
     "placeofbirth": "Poznań",
     "voivodeship": "Wielkopolskie",
-    "numberofalbums": 1,
+    "albums": [
+      {
+        "title": "in real life",
+        "cover": "covers/inreallife.png"
+      }
+    ],
     "labels": ["Baila Ella Records"],
     "gender": "Female",
     "img": "rapers/bambi.png",
@@ -15,7 +20,12 @@
     "name": "Young Leosia",
     "placeofbirth": "Szczecin",
     "voivodeship": "Zachodniopomorskie",
-    "numberofalbums": 1,
+    "albums": [
+      {
+        "title": "Hulanki",
+        "cover": "covers/hulanki.png"
+      }
+    ],
     "labels": ["Baila Ella Records"],
     "gender": "Female",
     "img": "rapers/youngleosia.png",
@@ -26,7 +36,20 @@
     "name": "Mata",
     "placeofbirth": "Wrocław",
     "voivodeship": "Dolnośląskie",
-    "numberofalbums": 3,
+    "albums": [
+      {
+        "title": "100 dni do matury",
+        "cover": "covers/100dnidomatury.png"
+      },
+      {
+        "title": "Młody Matczak",
+        "cover": "covers/mlodymatczak.png"
+      },
+      {
+        "title": "Serce (<33)",
+        "cover": "covers/serce.png"
+      }
+    ],
     "labels": ["Gombao33", "SB Maffija"],
     "gender": "Male",
     "img": "rapers/mata.png",
@@ -37,7 +60,20 @@
     "name": "Chivas",
     "placeofbirth": "Łódź",
     "voivodeship": "Łódzkie",
-    "numberofalbums": 3,
+    "albums": [
+      {
+        "title": "Nauczyłem się przeklinać",
+        "cover": "covers/nsp.png"
+      },
+      {
+        "title": "młody say 10",
+        "cover": "covers/mlodysay10.png"
+      },
+      {
+        "title": "Deathcore",
+        "cover": "covers/deathcore.png"
+      }
+    ],
     "labels": ["GUGU", "Globalheartz", "New Bad Label"],
     "gender": "Male",
     "img": "rapers/chivas.png",
@@ -48,7 +84,32 @@
     "name": "Otsochodzi",
     "placeofbirth": "Warszawa",
     "voivodeship": "Mazowieckie",
-    "numberofalbums": 6,
+    "albums": [
+      {
+        "title": "Slam",
+        "cover": "covers/slam.png"
+      },
+      {
+        "title": "Nowy kolor",
+        "cover": "covers/nowykolor.png"
+      },
+      {
+        "title": "Milość",
+        "cover": "covers/milosc.png"
+      },
+      {
+        "title": "2011",
+        "cover": "covers/2011.png"
+      },
+      {
+        "title": "Tarcho Terror",
+        "cover": "covers/tarchoterror.png"
+      },
+      {
+        "title": "TTHE GRIND",
+        "cover": "covers/tthegrind.png"
+      }
+    ],
     "labels": ["2020", "Asfalt Records"],
     "gender": "Male",
     "img": "rapers/otsochodzi.png",
@@ -59,7 +120,32 @@
     "name": "Taco Hemingway",
     "placeofbirth": "Kair",
     "voivodeship": "Kair",
-    "numberofalbums": 6,
+    "albums": [
+      {
+        "title": "Marmur",
+        "cover": "covers/marmur.png"
+      },
+      {
+        "title": "Cafe Belga",
+        "cover": "covers/cafebelga.png"
+      },
+      {
+        "title": "Pocztówka z WWA, Lato '19",
+        "cover": "covers/pocztowkazwwa.png"
+      },
+      {
+        "title": "Jarmark",
+        "cover": "covers/jarmark.png"
+      },
+      {
+        "title": "Europa",
+        "cover": "covers/europa.png"
+      },
+      {
+        "title": "1-800 Oświecenei",
+        "cover": "covers/1-800oswiecenie.png"
+      }
+    ],
     "labels": ["Taco Corp", "2020", "Asfalt Records"],
     "gender": "Male",
     "img": "rapers/tacohemingway.png",
@@ -70,7 +156,16 @@
     "name": "Fukaj",
     "placeofbirth": "Szczecin",
     "voivodeship": "Zachodniopomorskie",
-    "numberofalbums": 4,
+    "albums": [
+      {
+        "title": "Chaos",
+        "cover": "covers/choas.png"
+      },
+      {
+        "title": "Prelodium",
+        "cover": "covers/prelodium.png"
+      }
+    ],
     "labels": ["SBM Label"],
     "gender": "Male",
     "img": "rapers/fukaj.png",
@@ -81,7 +176,24 @@
     "name": "Oki",
     "placeofbirth": "Lubin",
     "voivodeship": "Dolnośląskie",
-    "numberofalbums": 4,
+    "albums": [
+      {
+        "title": "Oki & Nearr",
+        "cover": "covers/okinearr.png"
+      },
+      {
+        "title": "47universe",
+        "cover": "covers/47universe.png"
+      },
+      {
+        "title": "47playground",
+        "cover": "covers/47playground.png"
+      },
+      {
+        "title": "Produkt47",
+        "cover": "covers/produkt47.png"
+      }
+    ],
     "labels": ["2020"],
     "gender": "Male",
     "img": "rapers/oki.png",
@@ -92,7 +204,20 @@
     "name": "Young Igi",
     "placeofbirth": "Gdynia",
     "voivodeship": "Pomorskie",
-    "numberofalbums": 3,
+    "albums": [
+      {
+        "title": "Konfetti",
+        "cover": "covers/konfetti.png"
+      },
+      {
+        "title": "Skan myśli",
+        "cover": "covers/skanmysli.png"
+      },
+      {
+        "title": "Notatki z marginesu",
+        "cover": "covers/notatkizmarginesu.png"
+      }
+    ],
     "labels": ["Def Jam Poland", "YI Ent"],
     "gender": "Male",
     "img": "rapers/youngigi.png",
@@ -103,7 +228,28 @@
     "name": "Bedoes 2115",
     "placeofbirth": "Bydgoszcz",
     "voivodeship": "Kujawskopomorskie",
-    "numberofalbums": 5,
+    "albums": [
+      {
+        "title": "Aby śmierć miała znaczenie",
+        "cover": "covers/Abysmiercmialaznaczenie.png"
+      },
+      {
+        "title": "Kwiat polskiej młodzieży",
+        "cover": "covers/kwiatpolskiejmlodziezy.png"
+      },
+      {
+        "title": "Opowieści z Doliny Smoków",
+        "cover": "covers/opowiescizdolinysmokow.png"
+      },
+      {
+        "title": "Rewolucja romantyczna",
+        "cover": "covers/rewolucjaromantyczna.png"
+      },
+      {
+        "title": "Rodzinny Biznes",
+        "cover": "covers/rodzinnybiznes.png"
+      }
+    ],
     "labels": ["2115 Label", "SBM Label"],
     "gender": "Male",
     "img": "rapers/bedoes2115.png",
@@ -114,7 +260,16 @@
     "name": "Janusz Walczuk",
     "placeofbirth": "Żoliborz",
     "voivodeship": "Mazowieckie",
-    "numberofalbums": 2,
+    "albums": [
+      {
+        "title": "Janusz Walczuk",
+        "cover": "covers/januszwalczuk.png"
+      },
+      {
+        "title": "Jan Walczuk",
+        "cover": "covers/janwalczuk.png"
+      }
+    ],
     "labels": ["SBM Label"],
     "gender": "Male",
     "img": "rapers/januszwalczuk.png",
@@ -125,7 +280,12 @@
     "name": "Waima",
     "placeofbirth": "Kielce",
     "voivodeship": "Świętokrzyskie",
-    "numberofalbums": 1,
+    "albums": [
+      {
+        "title": "CAMELEO",
+        "cover": "covers/cameleo.png"
+      }
+    ],
     "labels": ["ZIOMALEO", "SME"],
     "gender": "Male",
     "img": "rapers/waima.png",
@@ -136,7 +296,24 @@
     "name": "Young Multi",
     "placeofbirth": "Głubczyce",
     "voivodeship": "Opolskie",
-    "numberofalbums": 4,
+    "albums": [
+      {
+        "title": "Nowa fala",
+        "cover": "covers/nowafala.png"
+      },
+      {
+        "title": "Trapstar",
+        "cover": "covers/trapstar.png"
+      },
+      {
+        "title": "Trap After Death",
+        "cover": "covers/trapafterdeath.png"
+      },
+      {
+        "title": "Toxic",
+        "cover": "covers/toxic.png"
+      }
+    ],
     "labels": ["YoungFamilyLabel", "My Music"],
     "gender": "Male",
     "img": "rapers/youngmulti.png",
@@ -147,7 +324,12 @@
     "name": "Kinny Zimmer",
     "placeofbirth": "...",
     "voivodeship": "...",
-    "numberofalbums": 1,
+    "albums": [
+      {
+        "title": "Letnisko",
+        "cover": "covers/letnisko.png"
+      }
+    ],
     "labels": ["SBM Label"],
     "gender": "Male",
     "img": "rapers/kinnyzimmer.png",
@@ -158,7 +340,24 @@
     "name": "White 2115",
     "placeofbirth": "Milanówek",
     "voivodeship": "Mazowieckie",
-    "numberofalbums": 4,
+    "albums": [
+      {
+        "title": "Rockstar",
+        "cover": "covers/rockstar.png"
+      },
+      {
+        "title": "Młody książę",
+        "cover": "covers/mlodyksiaze.png"
+      },
+      {
+        "title": "Rockstar: Do zachodu słońca",
+        "cover": "covers/rockstardzs.png"
+      },
+      {
+        "title": "Pretty Boy",
+        "cover": "covers/prettyboy.png"
+      }
+    ],
     "labels": ["2115 Label", "SBM Label"],
     "gender": "Male",
     "img": "rapers/white2115.png",
@@ -169,7 +368,12 @@
     "name": "Oliwka Brazil",
     "placeofbirth": "Marki",
     "voivodeship": "Mazowieckie",
-    "numberofalbums": 1,
+    "albums": [
+      {
+        "title": "Big Mommy",
+        "cover": "covers/bigmommy.png"
+      }
+    ],
     "labels": ["Warner Music Group"],
     "gender": "Female",
     "img": "rapers/oliwkabrazil.png",
@@ -179,8 +383,36 @@
     "id": 17,
     "name": "Gedz",
     "placeofbirth": "Malbork",
-    "voivodeship": "Pomorskie",
-    "numberofalbums": 7,
+    "albums": [
+      {
+        "title": "Serce bije w rytm",
+        "cover": "covers/sercebijewrytm.png"
+      },
+      {
+        "title": "NNJL",
+        "cover": "covers/nnjl.png"
+      },
+      {
+        "title": "Ameba",
+        "cover": "covers/Ameba.png"
+      },
+      {
+        "title": "247365",
+        "cover": "covers/247365.png"
+      },
+      {
+        "title": "Bohema",
+        "cover": "covers/bohema.png"
+      },
+      {
+        "title": "Stamina",
+        "cover": "covers/stamina.png"
+      },
+      {
+        "title": "Anatema",
+        "cover": "covers/anatema.png"
+      }
+    ],
     "labels": ["NNJL", "BOR Records"],
     "gender": "Male",
     "img": "rapers/gedz.png",
@@ -191,7 +423,28 @@
     "name": "Szpaku",
     "placeofbirth": "Morąg",
     "voivodeship": "Warmińskomazurskie",
-    "numberofalbums": 5,
+    "albums": [
+      {
+        "title": "Atypowy",
+        "cover": "covers/atypowy.png"
+      },
+      {
+        "title": "Dzieci duchy",
+        "cover": "covers/dzieciduchy.png"
+      },
+      {
+        "title": "Różowa pantera",
+        "cover": "covers/rozowapantera.png"
+      },
+      {
+        "title": "Dom dla zmyślonych przyjaciół pana Mateusza",
+        "cover": "covers/domdlazmyslonychprzyjaciolpanamateusza.png"
+      },
+      {
+        "title": "Uzumaki forma ostateczna",
+        "cover": "covers/uzumakiformaostateczna.png"
+      }
+    ],
     "labels": ["GUGU", "BOR Records"],
     "gender": "Male",
     "img": "rapers/szpaku.png",
@@ -202,7 +455,40 @@
     "name": "Kizo",
     "placeofbirth": "Gdańsk",
     "voivodeship": "Pomorskie",
-    "numberofalbums": 8,
+    "albums": [
+      {
+        "title": "Ortalion",
+        "cover": "covers/ortalion.png"
+      },
+      {
+        "title": "Czempion",
+        "cover": "covers/czempion.png"
+      },
+      {
+        "title": "Pegaz",
+        "cover": "covers/pegaz.png"
+      },
+      {
+        "title": "Złoto i biel",
+        "cover": "covers/zlotoibiel.png"
+      },
+      {
+        "title": "Posejdon",
+        "cover": "covers/posejdon.png"
+      },
+      {
+        "title": "Jeszcze pięć minut",
+        "cover": "covers/jeszczepiecminut.png"
+      },
+      {
+        "title": "Ostatni taniec",
+        "cover": "covers/ostatnitaniec.png"
+      },
+      {
+        "title": "Patocelebryta",
+        "cover": "covers/patocelebryta.png"
+      }
+    ],
     "labels": ["Universal Music Polska", "Spacerange", "Soul Records"],
     "gender": "Male",
     "img": "rapers/kizo.png",
@@ -213,7 +499,44 @@
     "name": "Kaz Bałagane",
     "placeofbirth": "Warszawa",
     "voivodeship": "Mazowieckie",
-    "numberofalbums": 9,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      }
+    ],
     "labels": ["Narkopop", "Step Records"],
     "gender": "Male",
     "img": "rapers/kazbalagane.png",
@@ -224,7 +547,36 @@
     "name": "Pezet",
     "placeofbirth": "Warszawa",
     "voivodeship": "Mazowieckie",
-    "numberofalbums": 7,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      }
+    ],
     "labels": ["Koka Beats", "Asfalt Records"],
     "gender": "Male",
     "img": "rapers/pezet.png",
@@ -235,7 +587,20 @@
     "name": "Qry",
     "placeofbirth": "Jasło",
     "voivodeship": "Podkarpackie",
-    "numberofalbums": 3,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      }
+    ],
     "labels": ["Ekipa", "Spacerange"],
     "gender": "Male",
     "img": "rapers/qry.png",
@@ -246,7 +611,48 @@
     "name": "Borixon",
     "placeofbirth": "Kielce",
     "voivodeship": "Świętokrzystkie",
-    "numberofalbums": 10,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      }
+    ],
     "labels": ["Spacerange", "NewBadLabel", "StoproRap"],
     "gender": "Male",
     "img": "rapers/borixon.png",
@@ -257,7 +663,20 @@
     "name": "Edzio",
     "placeofbirth": "Gdańsk",
     "voivodeship": "Pomorskie",
-    "numberofalbums": 3,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      }
+    ],
     "labels": ["..."],
     "gender": "Male",
     "img": "rapers/edzio.png",
@@ -268,7 +687,24 @@
     "name": "ReTo",
     "placeofbirth": "Piastów",
     "voivodeship": "Mazowieckie",
-    "numberofalbums": 4,
+    "albums": [
+      {
+        "title": "K R U K",
+        "cover": "covers/kruk.png"
+      },
+      {
+        "title": "BOA",
+        "cover": "covers/boa.png"
+      },
+      {
+        "title": "W samo południe",
+        "cover": "covers/wsamopoludnie.png"
+      },
+      {
+        "title": "STYXXX",
+        "cover": "covers/styxxx.png"
+      }
+    ],
     "labels": ["Spacerange", "NewBadLabel"],
     "gender": "Male",
     "img": "rapers/reto.png",
@@ -279,7 +715,88 @@
     "name": "Tede",
     "placeofbirth": "Warszawa",
     "voivodeship": "Mazowieckie",
-    "numberofalbums": 20,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      }
+    ],
     "labels": ["Wielkie Joł", "Asfalt Records"],
     "gender": "Male",
     "img": "rapers/tede.png",
@@ -290,7 +807,60 @@
     "name": "Paluch",
     "placeofbirth": "Poznań",
     "voivodeship": "Wielkopolskie",
-    "numberofalbums": 13,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      }
+    ],
     "labels": ["BOR Records"],
     "gender": "Male",
     "img": "rapers/paluch.png",
@@ -301,7 +871,28 @@
     "name": "Peja",
     "placeofbirth": "Poznań",
     "voivodeship": "Wielkopolskie",
-    "numberofalbums": 5,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      }
+    ],
     "labels": ["RPS Enterteyment", "Fonografika"],
     "gender": "Male",
     "img": "rapers/peja.png",
@@ -312,7 +903,16 @@
     "name": "Asster",
     "placeofbirth": "Łódź",
     "voivodeship": "Łódzkie",
-    "numberofalbums": 2,
+    "albums": [
+      {
+        "title": "Mowa węży",
+        "cover": "covers/mowawezy.png"
+      },
+      {
+        "title": "All Day Fresh",
+        "cover": "covers/alldayfresh.png"
+      }
+    ],
     "labels": ["e-Muzyka"],
     "gender": "Male",
     "img": "rapers/asster.png",
@@ -323,7 +923,12 @@
     "name": "Alberto",
     "placeofbirth": "Moskwa",
     "voivodeship": "Moskwa",
-    "numberofalbums": 1,
+    "albums": [
+      {
+        "title": "Smak wakacji",
+        "cover": "covers/smakwakacji.png"
+      }
+    ],
     "labels": ["Miejska Jungla", "GM2L"],
     "gender": "Male",
     "img": "rapers/alberto.png",
@@ -331,21 +936,55 @@
   },
   {
     "id": 31,
-    "name": "Avi",
-    "placeofbirth": "Raszyn",
-    "voivodeship": "Mazowieckie",
-    "numberofalbums": 4,
-    "labels": ["Moya Label"],
+    "name": "Jacuś",
+    "placeofbirth": "Rybnik",
+    "voivodeship": "Śląskie",
+    "albums": [
+      {
+        "title": "Gucci Trip",
+        "cover": "covers/guccitrip.png"
+      },
+      {
+        "title": "Prezes",
+        "cover": "covers/prezes.png"
+      }
+    ],
+    "labels": ["SBM Label"],
     "gender": "Male",
-    "img": "rapers/avi.png",
-    "year": 1985
+    "img": "rapers/jacus.png",
+    "year": 2002
   },
   {
     "id": 32,
     "name": "Słoń",
     "placeofbirth": "Poznań",
     "voivodeship": "Wielkopolskie",
-    "numberofalbums": 6,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      }
+    ],
     "labels": ["Brain Dead Familia"],
     "gender": "Male",
     "img": "rapers/slon.png",
@@ -356,7 +995,16 @@
     "name": "Solar",
     "placeofbirth": "Warszawa",
     "voivodeship": "Mazowieckie",
-    "numberofalbums": 2,
+    "albums": [
+      {
+        "title": "Klub 27",
+        "cover": "covers/klub27.png"
+      },
+      {
+        "title": "Pokój zero",
+        "cover": "covers/pokojzero.png"
+      }
+    ],
     "labels": ["SBM Label", "Prosto"],
     "gender": "Male",
     "img": "rapers/solar.png",
@@ -367,7 +1015,44 @@
     "name": "Sarius",
     "placeofbirth": "Częstochowa",
     "voivodeship": "Śląskie",
-    "numberofalbums": 9,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      }
+    ],
     "labels": ["Antihype", "Asfalt Records"],
     "gender": "Male",
     "img": "rapers/sarius.png",
@@ -378,7 +1063,32 @@
     "name": "Diho",
     "placeofbirth": "Warszawa",
     "voivodeship": "Mazowieckie",
-    "numberofalbums": 6,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "Morda nie szklanka",
+        "cover": "covers/mordanieszklanka.png"
+      }
+    ],
     "labels": ["GM2L"],
     "gender": "Male",
     "img": "rapers/diho.png",
@@ -389,7 +1099,20 @@
     "name": "Guzior",
     "placeofbirth": "Wrocław",
     "voivodeship": "Dolnośląskie",
-    "numberofalbums": 3,
+    "albums": [
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "None",
+        "cover": "covers/none.png"
+      },
+      {
+        "title": "Pleśń",
+        "cover": "covers/plesn.png"
+      }
+    ],
     "labels": ["EVILTWINcorp", "QueQuality"],
     "gender": "Male",
     "img": "rapers/guzior.png",

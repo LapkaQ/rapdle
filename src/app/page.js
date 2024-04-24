@@ -15,37 +15,50 @@ export default function Home() {
     }
   }, []);
   const thisYear = new Date().getFullYear();
-  const raperzy = data.map((raper) => (
-    <div key={raper.id}>
-      <img src={raper.img} alt="zdj" className="h-60" />
-      <h1 className="font-bold text-2xl">{raper.name}</h1> <br />
-      <h2>
-        Label:{" "}
-        <strong>
-          {raper.labels.length < 2
-            ? raper.labels
-            : raper.labels.map((label, index) => (
-                <span key={index}>
-                  {label}
-                  {index !== raper.labels.length - 1 && <br />}
-                </span>
-              ))}
-        </strong>
-      </h2>
-      <p>
-        Wiek: <strong>{thisYear - raper.year}</strong>
-      </p>
-      <p>
-        Miejsce urodzenia: <strong>{raper.placeofbirth}</strong>
-      </p>
-      <p>
-        Ilosc wydanych albumów: <strong>{raper.numberofalbums}</strong>
-      </p>
-      <p>
-        Plec: <strong>{raper.gender}</strong>
-      </p>
-    </div>
-  ));
+  const raperzy = data.map((raper) => {
+    const albums = raper.albums
+      .filter((album) => album.title !== "None")
+      .map((album) => (
+        <div key={album.title} className="flex flex-row items-start">
+          <img src={album.cover} alt={album.title} className="w-5" />
+          <p>{album.title}</p>
+        </div>
+      ));
+
+    return (
+      <div key={raper.id}>
+        <img src={raper.img} alt="zdj" className="h-60" />
+        <h1 className="font-bold text-2xl">{raper.name}</h1>
+        <br />
+        <h2>
+          Label:{" "}
+          <strong>
+            {raper.labels.length < 2
+              ? raper.labels
+              : raper.labels.map((label, index) => (
+                  <span key={index}>
+                    {label}
+                    {index !== raper.labels.length - 1 && <br />}
+                  </span>
+                ))}
+          </strong>
+        </h2>
+        <p>
+          Wiek: <strong>{thisYear - raper.year}</strong>
+        </p>
+        <p>
+          Miejsce urodzenia: <strong>{raper.placeofbirth}</strong>
+        </p>
+        <p>
+          Ilość wydanych albumów: <strong>{raper.albums.length}</strong>
+        </p>
+        <div className="flex flex-col justify-center">Albumy: {albums}</div>
+        <p>
+          Płeć: <strong>{raper.gender}</strong>
+        </p>
+      </div>
+    );
+  });
   console.log(data);
   return <main className="items-start flex-wrap">{raperzy}</main>;
 }
