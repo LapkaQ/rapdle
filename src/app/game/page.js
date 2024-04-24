@@ -70,6 +70,8 @@ export default function Game() {
   };
   const enterClick = (e) => {
     if (e.key == "Enter") {
+      // console.log(JSON.parse(JSON.stringify(randomRaper.albums)).length);
+      // console.log(randomRaper.albums);
       if (filtredData.length > 0) {
         const raper = filtredData[0];
         handleClick(raper);
@@ -89,7 +91,6 @@ export default function Game() {
       [key]: false,
     }));
   };
-
   const InfoTip = (props) => {
     if (props.tekst == "labelInfo") {
       return (
@@ -164,7 +165,8 @@ export default function Game() {
         />
         <div className="absolute bottom-0 left-0">
           {randomRaper.name},{randomRaper.labels},{randomRaper.placeofbirth},
-          {randomRaper.voivodeship},{randomRaper.albums},{randomRaper.gender}
+          {randomRaper.voivodeship}
+          {randomRaper.albums && randomRaper.albums.length},{randomRaper.gender}
         </div>
         {/* LISA RAPEROW */}
         {inputValue != 0 && filtredData.length > 0 && (

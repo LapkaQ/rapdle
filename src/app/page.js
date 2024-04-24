@@ -52,7 +52,7 @@ export default function Home() {
         <p>
           Ilość wydanych albumów: <strong>{raper.albums.length}</strong>
         </p>
-        <div className="flex flex-col justify-center">Albumy: {albums}</div>
+        <div className="flex flex-col justify-center">{albums}</div>
         <p>
           Płeć: <strong>{raper.gender}</strong>
         </p>
