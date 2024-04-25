@@ -113,6 +113,12 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <button
+        className="chooseModeButton m-5"
+        onClick={() => setLoading(!isLoading)}
+      >
+        Toggle rappers
+      </button>
       <div className="flex items-start justify-center flex-wrap">
         {!isLoading && raperzy}
       </div>
