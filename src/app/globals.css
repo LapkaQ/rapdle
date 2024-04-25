@@ -6,6 +6,8 @@
   --background-color: 18, 18, 18;
   --foreground-rgb: 255, 255, 255;
   --foreground2-rgb: 148, 148, 148;
+  --theme-rgb: 132, 62, 234;
+  --theme2-rgb: 207, 93, 201;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,6 +34,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.themeGradient {
+  background: linear-gradient(
+    45deg,
+    rgb(var(--theme-rgb)),
+    rgb(var(--theme2-rgb))
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .guessInput {
   outline: none;

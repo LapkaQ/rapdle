@@ -19,7 +19,7 @@ export default function Home() {
     const albums = raper.albums
       .filter((album) => album.title !== "None")
       .map((album) => (
-        <div key={album.title} className="flex flex-row items-start">
+        <div key={album.title} className="flex flex-row items-start ">
           {/* <img src={album.cover} alt={album.title} className="w-5" /> */}
           <Image
             src={"/" + album.cover}
@@ -29,7 +29,9 @@ export default function Home() {
             loading="eager"
             unoptimized={false}
           />
-          <p>{album.title}</p>
+          <p className="w-52 hover:text-[color:rgb(var(--theme-rgb))] transition duration-50 ease-in-out">
+            {album.title}
+          </p>
         </div>
       ));
 
@@ -77,5 +79,14 @@ export default function Home() {
     );
   });
   console.log(data);
-  return <main className="items-start flex-wrap">{raperzy}</main>;
+  return (
+    <main className="flex items-start flex-wrap ">
+      <div>
+        <h1 className="font-black text-5xl p-5">
+          Welcome to <span className="themeGradient">Rapdle</span>
+        </h1>
+      </div>
+      <div className="flex items-start justify-center flex-wrap">{raperzy}</div>
+    </main>
+  );
 }

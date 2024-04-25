@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 import Image from "next/image";
-
+import InfoTip from "../../../components/InfoTip";
 export default function Game({ params }) {
   const router = useRouter();
   const [mode, setMode] = useState(
@@ -75,7 +75,7 @@ export default function Game({ params }) {
     if (raper.id === randomRaper.id) {
       setIsWin(true);
     }
-    if (guessedData.length > 3) {
+    if (mode == "normal" && guessedData.length > 3) {
       setIsLose(true);
     }
     setInputValue("");
@@ -108,56 +108,15 @@ export default function Game({ params }) {
       [key]: false,
     }));
   };
-  const InfoTip = (props) => {
-    if (props.tekst == "labelInfo") {
-      return (
-        <div className="infoTip">
-          <div className="flex flex-row justify-center items-start">
-            <p className="correct p-2 rounded-md"></p>
-            <p>Są w tym samym labelu</p>
-          </div>
-          <div className="flex flex-row justify-center items-start">
-            <p className="middle p-2 rounded-md"></p>
-            <p>Mieli wspolny label</p>
-          </div>
-          <div className="flex flex-row justify-center items-start">
-            <p className="incorrect p-2 rounded-md"></p>
-            <p>Brak powiązań</p>
-          </div>
-        </div>
-      );
-    } else if (props.tekst == "birthplace") {
-      return (
-        <div className="infoTip">
-          <div className="flex flex-row justify-center items-start">
-            <p className="correct p-2 rounded-md"></p>
-            <p>Urodzeni w tym samym mieście</p>
-          </div>
-          <div className="flex flex-row justify-center items-start">
-            <p className="middle p-2 rounded-md"></p>
-            <p>Urodzeni w tym samym województwie </p>
-          </div>
-          <div className="flex flex-row justify-center items-start">
-            <p className="incorrect p-2 rounded-md"></p>
-            <p>Brak powiązań</p>
-          </div>
-        </div>
-      );
-    }
-  };
   const WinAlert = () => {
     return (
-      <div className="blurbg animate-fadeIn2">
+      <div className="blurbg animate-fadeIn7">
         <div className="alertInfo winAlert">
+          Wygrałeś!
           <button id="buttonCloseAlert" onClick={closeAlert}>
             X
           </button>
           <div className="flex flex-row font-normal">
-            {/* <img
-          src={randomRaper.img}
-          alt=""
-          className="w-20 p-2 rounded-3xl"
-        /> */}
             <Image
               src={"/" + randomRaper.img}
               alt={randomRaper.img}
@@ -187,11 +146,6 @@ export default function Game({ params }) {
             X
           </button>
           <div className="flex flex-row font-normal">
-            {/* <img
-          src={randomRaper.img}
-          alt=""
-          className="w-20 p-2 rounded-3xl"
-        /> */}
             <Image
               src={"/" + randomRaper.img}
               alt={randomRaper.img}

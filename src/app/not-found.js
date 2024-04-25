@@ -7,10 +7,7 @@ export default function Custom404() {
       <h1 className="text-4xl font-medium whiteGlow">Strona nie znaleziona</h1>
       <p className="font-light p-2 whiteGlow">
         Przepraszamy, ale strona, której szukasz, nie istnieje. Możesz wrócić do{" "}
-        <Link
-          href="/"
-          className="text-[color:rgb(var(--foreground2-rgb))] animate-pulse"
-        >
+        <Link href="/" className=" animate-pulse">
           strony głównej
         </Link>
         .
