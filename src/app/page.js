@@ -40,6 +40,7 @@ export default function Home() {
           src={"/" + raper.img}
           width={240}
           height={240}
+          quality={100}
           alt={raper.img}
           loading="eager"
           unoptimized={false}

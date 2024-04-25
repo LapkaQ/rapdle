@@ -104,8 +104,7 @@ main {
   position: relative;
   padding: 20px 100px;
   border-radius: 20px;
-  border: 3px solid rgb(2, 128, 4);
-  background-color: rgba(0, 255, 51, 0.205);
+
   box-shadow: 0px 0px 10px 10px black, 0px 0px;
   display: flex;
   flex-direction: column;
@@ -114,6 +113,14 @@ main {
   font-size: 50px;
   font-weight: 800;
   text-shadow: 0px 0px 2px white;
+}
+.winAlert {
+  border: 3px solid rgb(2, 128, 4);
+  background-color: rgba(0, 255, 51, 0.205);
+}
+.loseAlert {
+  border: 3px solid rgb(128, 2, 2);
+  background-color: rgba(255, 0, 0, 0.294);
 }
 #buttonCloseAlert {
   position: absolute;
@@ -166,4 +173,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   transform: rotate(45deg);
+}
+.whiteGlow {
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.518);
 }
