@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 export default function Home() {
   const [data, setData] = useState([]);
@@ -80,13 +81,41 @@ export default function Home() {
   });
   console.log(data);
   return (
-    <main className="flex items-start flex-wrap ">
-      <div>
+    <main className="flex flex-col items-center flex-wrap justify-center">
+      <div className="">
         <h1 className="font-black text-5xl p-5">
           Welcome to <span className="themeGradient">Rapdle</span>
         </h1>
       </div>
-      <div className="flex items-start justify-center flex-wrap">{raperzy}</div>
+      <div className="flex flex-row justify-center items-center gap-5 p-5">
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-2xl font-bold">Rapper</h1>
+          <p>Mode:</p>
+          <div className="flex gap-2">
+            <Link href="/mode/rapper/normal">
+              <button className="chooseModeButton">Normal</button>
+            </Link>
+            <Link href="/mode/rapper/freestyle">
+              <button className="chooseModeButton">Freestyle</button>
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-2xl font-bold">Cover</h1>
+          <p>Mode:</p>
+          <div className="flex gap-2">
+            <Link href="/mode/cover/normal">
+              <button className="chooseModeButton">Normal</button>
+            </Link>
+            <Link href="/mode/cover/freestyle">
+              <button className="chooseModeButton">Freestyle</button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="flex items-start justify-center flex-wrap">
+        {!isLoading && raperzy}
+      </div>
     </main>
   );
 }

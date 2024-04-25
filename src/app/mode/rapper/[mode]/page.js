@@ -165,6 +165,7 @@ export default function Game({ params }) {
     mode !== "404" && (
       <main className="flex flex-col h-auto grow relative">
         <p>{mode}</p>
+        <p>{mode == "normal" && 5 - guessedData.length}</p>
         {(isWin && <WinAlert />) || (isLose && <LoseAlert />)}
         <div className="flex flex-col justify-center items-center content">
           <h1 className="font-black text-2xl">Zgadnij dzisiejszego rapera</h1>
@@ -275,13 +276,6 @@ export default function Game({ params }) {
                     className="flex flex-row items-center justify-between"
                     key={raper.id}
                   >
-                    {/* <img
-                    src={raper.img}
-                    className={`guessedInfo relative animate-fadeIn1 ${
-                      raper.img !== randomRaper.img ? "incorrect" : "correct"
-                    }`}
-                    alt=""
-                  /> */}
                     <Image
                       src={"/" + raper.img}
                       alt={raper.img}
@@ -309,11 +303,6 @@ export default function Game({ params }) {
                         thisYear - randomRaper.year ? (
                           thisYear - raper.year <
                           thisYear - randomRaper.year ? (
-                            // <img
-                            //   className="opacity-20"
-                            //   src="icons/arrowup.png"
-                            //   alt="Arrow Up"
-                            // />
                             <Image
                               src="/icons/arrowup.png"
                               alt="Arrow Up"
@@ -324,11 +313,6 @@ export default function Game({ params }) {
                               className={`opacity-20`}
                             />
                           ) : (
-                            // <img
-                            //   className="opacity-20"
-                            //   src="icons/arrowdown.png"
-                            //   alt="Arrow Down"
-                            // />
                             <Image
                               src="/icons/arrowdown.png"
                               alt="Arrow Down"
