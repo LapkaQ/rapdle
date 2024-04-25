@@ -26,7 +26,7 @@ export default function Home() {
             width={25}
             height={25}
             alt={album.cover}
-            loading="lazy"
+            loading="eager"
             unoptimized={false}
           />
           <p>{album.title}</p>
@@ -41,7 +41,7 @@ export default function Home() {
           width={240}
           height={240}
           alt={raper.img}
-          loading="lazy"
+          loading="eager"
           unoptimized={false}
         />
         <h1 className="font-bold text-2xl">{raper.name}</h1>

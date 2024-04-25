@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Game() {
   const [data, setData] = useState([]);
@@ -176,7 +177,16 @@ export default function Game() {
                 key={raper.id}
                 onClick={() => handleClick(raper)}
               >
-                <img src={raper.img} className="w-20 p-2 rounded-3xl" alt="" />
+                {/* <img src={raper.img} className="w-20 p-2 rounded-3xl" alt="" /> */}
+                <Image
+                  src={"/" + raper.img}
+                  alt={raper.img}
+                  width={80}
+                  height={80}
+                  loading="eager"
+                  unoptimized={false}
+                  className="w-20 p-2 rounded-3xl"
+                />
                 <h1 className="font-black grow text-center">{raper.name}</h1>
               </div>
             ))}
@@ -251,12 +261,23 @@ export default function Game() {
                   className="flex flex-row items-center justify-between"
                   key={raper.id}
                 >
-                  <img
+                  {/* <img
                     src={raper.img}
                     className={`guessedInfo relative animate-fadeIn1 ${
                       raper.img !== randomRaper.img ? "incorrect" : "correct"
                     }`}
                     alt=""
+                  /> */}
+                  <Image
+                    src={"/" + raper.img}
+                    alt={raper.img}
+                    width={80}
+                    height={80}
+                    loading="eager"
+                    unoptimized={false}
+                    className={`guessedInfo relative animate-fadeIn1 ${
+                      raper.img !== randomRaper.img ? "incorrect" : "correct"
+                    }`}
                   />
                   {/* Year */}
                   <div
@@ -270,16 +291,34 @@ export default function Game() {
                     <h1 className="icon material-symbols-outlined">
                       {thisYear - raper.year !== thisYear - randomRaper.year ? (
                         thisYear - raper.year < thisYear - randomRaper.year ? (
-                          <img
-                            className="opacity-20"
-                            src="icons/arrowup.png"
+                          // <img
+                          //   className="opacity-20"
+                          //   src="icons/arrowup.png"
+                          //   alt="Arrow Up"
+                          // />
+                          <Image
+                            src="/icons/arrowup.png"
                             alt="Arrow Up"
+                            width={80}
+                            height={80}
+                            loading="eager"
+                            unoptimized={false}
+                            className={`opacity-20`}
                           />
                         ) : (
-                          <img
-                            className="opacity-20"
-                            src="icons/arrowdown.png"
+                          // <img
+                          //   className="opacity-20"
+                          //   src="icons/arrowdown.png"
+                          //   alt="Arrow Down"
+                          // />
+                          <Image
+                            src="/icons/arrowdown.png"
                             alt="Arrow Down"
+                            width={80}
+                            height={80}
+                            loading="eager"
+                            unoptimized={false}
+                            className={`opacity-20`}
                           />
                         )
                       ) : null}
@@ -333,16 +372,34 @@ export default function Game() {
                     <h1 className="icon material-symbols-outlined">
                       {raper.albums.length !== randomRaper.albums.length ? (
                         raper.albums.length < randomRaper.albums.length ? (
-                          <img
-                            className="opacity-20"
-                            src="icons/arrowup.png"
+                          // <img
+                          //   className="opacity-20"
+                          //   src="icons/arrowup.png"
+                          //   alt="Arrow Up"
+                          // />
+                          <Image
+                            src="/icons/arrowup.png"
                             alt="Arrow Up"
+                            width={80}
+                            height={80}
+                            loading="eager"
+                            unoptimized={false}
+                            className={`opacity-20`}
                           />
                         ) : (
-                          <img
-                            className="opacity-20"
-                            src="icons/arrowdown.png"
+                          // <img
+                          //   className="opacity-20"
+                          //   src="icons/arrowdown.png"
+                          //   alt="Arrow Down"
+                          // />
+                          <Image
+                            src="/icons/arrowdown.png"
                             alt="Arrow Down"
+                            width={80}
+                            height={80}
+                            loading="eager"
+                            unoptimized={false}
+                            className={`opacity-20`}
                           />
                         )
                       ) : null}

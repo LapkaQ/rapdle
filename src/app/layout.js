@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./globalicons.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
