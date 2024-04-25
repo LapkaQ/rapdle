@@ -20,14 +20,30 @@ export default function Home() {
       .filter((album) => album.title !== "None")
       .map((album) => (
         <div key={album.title} className="flex flex-row items-start">
-          <img src={album.cover} alt={album.title} className="w-5" />
+          {/* <img src={album.cover} alt={album.title} className="w-5" /> */}
+          <Image
+            src={"/" + album.cover}
+            width={25}
+            height={25}
+            alt={album.cover}
+            loading="lazy"
+            unoptimized={false}
+          />
           <p>{album.title}</p>
         </div>
       ));
 
     return (
       <div key={raper.id}>
-        <img src={raper.img} alt="zdj" className="h-60" />
+        {/* <img src={raper.img} alt="zdj" className="h-60" /> */}
+        <Image
+          src={"/" + raper.img}
+          width={240}
+          height={240}
+          alt={raper.img}
+          loading="lazy"
+          unoptimized={false}
+        />
         <h1 className="font-bold text-2xl">{raper.name}</h1>
         <br />
         <h2>
