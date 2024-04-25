@@ -129,7 +129,7 @@ export default function Game() {
     }
   };
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col h-auto grow relative">
       {isWin && (
         <div className="blurbg animate-fadeIn7">
           <div className="alertInfo">
@@ -163,7 +163,7 @@ export default function Game() {
           value={inputValue}
           onKeyDown={enterClick}
         />
-        <div className="absolute bottom-0 left-0">
+        <div className="absolute bottom-0 left-0 text-transparent	hover:text-inherit bg-black p-2 rounded-2xl">
           {randomRaper.name},{randomRaper.labels},{randomRaper.placeofbirth},
           {randomRaper.voivodeship}
           {randomRaper.albums && randomRaper.albums.length},{randomRaper.gender}
