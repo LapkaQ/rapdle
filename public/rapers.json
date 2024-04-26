@@ -26,7 +26,7 @@
         "cover": "covers/hulanki.png"
       }
     ],
-    "labels": ["Baila Ella Records"],
+    "labels": ["Baila Ella Records", "INTERNAZIOMALE"],
     "gender": "Female",
     "img": "rapers/youngleosia.png",
     "year": 1998
@@ -286,7 +286,7 @@
         "cover": "covers/cameleo.png"
       }
     ],
-    "labels": ["ZIOMALEO", "SME"],
+    "labels": ["ZIOMALEO", "SME","INTERNAZIOMALE"],
     "gender": "Male",
     "img": "rapers/waima.png",
     "year": 2004
@@ -1117,5 +1117,29 @@
     "gender": "Male",
     "img": "rapers/guzior.png",
     "year": 1992
+  },
+  {
+    "id": 36,
+    "name": "Żabson",
+    "placeofbirth": "Opoczno",
+    "voivodeship": "Łódzkie",
+    "albums": [
+      {
+        "title": "To ziomal",
+        "cover": "covers/toziomal.png"
+      },
+      {
+        "title": "Internaziomal",
+        "cover": "covers/internaziomal.png"
+      },
+      {
+        "title": "Ostatni ziomal",
+        "cover": "covers/ostatniziomal.png"
+      }
+    ],
+    "labels": ["INTERNAZIOMALE"],
+    "gender": "Male",
+    "img": "rapers/zabson.png",
+    "year": 1994
   }
 ]

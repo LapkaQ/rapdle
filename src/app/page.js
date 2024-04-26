@@ -81,7 +81,7 @@ export default function Home() {
   });
   console.log(data);
   return (
-    <main className="flex flex-col items-center flex-wrap justify-center">
+    <main className="flex flex-col items-center flex-wrap justify-center grow">
       <div className="">
         <h1 className="font-black text-5xl p-5">
           Welcome to <span className="themeGradient">Rapdle</span>
