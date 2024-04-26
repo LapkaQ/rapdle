@@ -165,10 +165,16 @@ export default function Game({ params }) {
     mode !== "404" && (
       <main className="flex flex-col h-auto grow relative">
         <p className="font-black text-xl">Tryb: {mode}</p>
-        {mode == "normal" && < div className={`attemptsLeft relative flex flex-col justify-center items-center ${guessedData.length == 5 ? "incorrect" : "correct"}`}>
-          <h1 className="font-light text-xl">Próby:</h1>
-          <h1 className="font-black text-5xl"> {5 - guessedData.length}</h1>
-        </div>}
+        {mode == "normal" && (
+          <div
+            className={`attemptsLeft relative flex flex-col justify-center items-center ${
+              guessedData.length == 5 ? "incorrect" : "correct"
+            }`}
+          >
+            <h1 className="font-light text-xl">Próby:</h1>
+            <h1 className="font-black text-5xl"> {5 - guessedData.length}</h1>
+          </div>
+        )}
         {(isWin && <WinAlert />) || (isLose && <LoseAlert />)}
         <div className="flex flex-col justify-center items-center content">
           <h1 className="font-black text-2xl">Zgadnij dzisiejszego rapera</h1>

@@ -7,12 +7,12 @@
     "albums": [
       {
         "title": "in real life",
-        "cover": "covers/inreallife.png"
+        "cover": "covers50p/inreallife.png"
       }
     ],
     "labels": ["Baila Ella Records"],
     "gender": "Female",
-    "img": "rapers/bambi.png",
+    "img": "rapers50p/bambi.png",
     "year": 2003
   },
   {
@@ -23,12 +23,12 @@
     "albums": [
       {
         "title": "Hulanki",
-        "cover": "covers/hulanki.png"
+        "cover": "covers50p/hulanki.png"
       }
     ],
     "labels": ["Baila Ella Records", "INTERNAZIOMALE"],
     "gender": "Female",
-    "img": "rapers/youngleosia.png",
+    "img": "rapers50p/youngleosia.png",
     "year": 1998
   },
   {
@@ -39,20 +39,20 @@
     "albums": [
       {
         "title": "100 dni do matury",
-        "cover": "covers/100dnidomatury.png"
+        "cover": "covers50p/100dnidomatury.png"
       },
       {
         "title": "Młody Matczak",
-        "cover": "covers/mlodymatczak.png"
+        "cover": "covers50p/mlodymatczak.png"
       },
       {
         "title": "Serce (<33)",
-        "cover": "covers/serce.png"
+        "cover": "covers50p/serce.png"
       }
     ],
     "labels": ["Gombao33", "SB Maffija"],
     "gender": "Male",
-    "img": "rapers/mata.png",
+    "img": "rapers50p/mata.png",
     "year": 2000
   },
   {
@@ -63,20 +63,20 @@
     "albums": [
       {
         "title": "Nauczyłem się przeklinać",
-        "cover": "covers/nsp.png"
+        "cover": "covers50p/nsp.png"
       },
       {
         "title": "młody say 10",
-        "cover": "covers/mlodysay10.png"
+        "cover": "covers50p/mlodysay10.png"
       },
       {
         "title": "Deathcore",
-        "cover": "covers/deathcore.png"
+        "cover": "covers50p/deathcore.png"
       }
     ],
     "labels": ["GUGU", "Globalheartz", "New Bad Label"],
     "gender": "Male",
-    "img": "rapers/chivas.png",
+    "img": "rapers50p/chivas.png",
     "year": 1998
   },
   {
@@ -87,32 +87,32 @@
     "albums": [
       {
         "title": "Slam",
-        "cover": "covers/slam.png"
+        "cover": "covers50p/slam.png"
       },
       {
         "title": "Nowy kolor",
-        "cover": "covers/nowykolor.png"
+        "cover": "covers50p/nowykolor.png"
       },
       {
         "title": "Milość",
-        "cover": "covers/milosc.png"
+        "cover": "covers50p/milosc.png"
       },
       {
         "title": "2011",
-        "cover": "covers/2011.png"
+        "cover": "covers50p/2011.png"
       },
       {
         "title": "Tarcho Terror",
-        "cover": "covers/tarchoterror.png"
+        "cover": "covers50p/tarchoterror.png"
       },
       {
         "title": "TTHE GRIND",
-        "cover": "covers/tthegrind.png"
+        "cover": "covers50p/tthegrind.png"
       }
     ],
     "labels": ["2020", "Asfalt Records"],
     "gender": "Male",
-    "img": "rapers/otsochodzi.png",
+    "img": "rapers50p/otsochodzi.png",
     "year": 1996
   },
   {
@@ -123,32 +123,32 @@
     "albums": [
       {
         "title": "Marmur",
-        "cover": "covers/marmur.png"
+        "cover": "covers50p/marmur.png"
       },
       {
         "title": "Cafe Belga",
-        "cover": "covers/cafebelga.png"
+        "cover": "covers50p/cafebelga.png"
       },
       {
         "title": "Pocztówka z WWA, Lato '19",
-        "cover": "covers/pocztowkazwwa.png"
+        "cover": "covers50p/pocztowkazwwa.png"
       },
       {
         "title": "Jarmark",
-        "cover": "covers/jarmark.png"
+        "cover": "covers50p/jarmark.png"
       },
       {
         "title": "Europa",
-        "cover": "covers/europa.png"
+        "cover": "covers50p/europa.png"
       },
       {
         "title": "1-800 Oświecenei",
-        "cover": "covers/1-800oswiecenie.png"
+        "cover": "covers50p/1-800oswiecenie.png"
       }
     ],
     "labels": ["Taco Corp", "2020", "Asfalt Records"],
     "gender": "Male",
-    "img": "rapers/tacohemingway.png",
+    "img": "rapers50p/tacohemingway.png",
     "year": 1990
   },
   {
@@ -159,16 +159,16 @@
     "albums": [
       {
         "title": "Chaos",
-        "cover": "covers/choas.png"
+        "cover": "covers50p/choas.png"
       },
       {
         "title": "Prelodium",
-        "cover": "covers/prelodium.png"
+        "cover": "covers50p/prelodium.png"
       }
     ],
     "labels": ["SBM Label"],
     "gender": "Male",
-    "img": "rapers/fukaj.png",
+    "img": "rapers50p/fukaj.png",
     "year": 2003
   },
   {
@@ -179,24 +179,24 @@
     "albums": [
       {
         "title": "Oki & Nearr",
-        "cover": "covers/okinearr.png"
+        "cover": "covers50p/okinearr.png"
       },
       {
         "title": "47universe",
-        "cover": "covers/47universe.png"
+        "cover": "covers50p/47universe.png"
       },
       {
         "title": "47playground",
-        "cover": "covers/47playground.png"
+        "cover": "covers50p/47playground.png"
       },
       {
         "title": "Produkt47",
-        "cover": "covers/produkt47.png"
+        "cover": "covers50p/produkt47.png"
       }
     ],
     "labels": ["2020"],
     "gender": "Male",
-    "img": "rapers/oki.png",
+    "img": "rapers50p/oki.png",
     "year": 1998
   },
   {
@@ -207,20 +207,20 @@
     "albums": [
       {
         "title": "Konfetti",
-        "cover": "covers/konfetti.png"
+        "cover": "covers50p/konfetti.png"
       },
       {
         "title": "Skan myśli",
-        "cover": "covers/skanmysli.png"
+        "cover": "covers50p/skanmysli.png"
       },
       {
         "title": "Notatki z marginesu",
-        "cover": "covers/notatkizmarginesu.png"
+        "cover": "covers50p/notatkizmarginesu.png"
       }
     ],
     "labels": ["Def Jam Poland", "YI Ent"],
     "gender": "Male",
-    "img": "rapers/youngigi.png",
+    "img": "rapers50p/youngigi.png",
     "year": 1999
   },
   {
@@ -231,28 +231,28 @@
     "albums": [
       {
         "title": "Aby śmierć miała znaczenie",
-        "cover": "covers/abysmiercmialaznaczenie.png"
+        "cover": "covers50p/abysmiercmialaznaczenie.png"
       },
       {
         "title": "Kwiat polskiej młodzieży",
-        "cover": "covers/kwiatpolskiejmlodziezy.png"
+        "cover": "covers50p/kwiatpolskiejmlodziezy.png"
       },
       {
         "title": "Opowieści z Doliny Smoków",
-        "cover": "covers/opowiescizdolinysmokow.png"
+        "cover": "covers50p/opowiescizdolinysmokow.png"
       },
       {
         "title": "Rewolucja romantyczna",
-        "cover": "covers/rewolucjaromantyczna.png"
+        "cover": "covers50p/rewolucjaromantyczna.png"
       },
       {
         "title": "Rodzinny Biznes",
-        "cover": "covers/rodzinnybiznes.png"
+        "cover": "covers50p/rodzinnybiznes.png"
       }
     ],
     "labels": ["2115 Label", "SBM Label"],
     "gender": "Male",
-    "img": "rapers/bedoes2115.png",
+    "img": "rapers50p/bedoes2115.png",
     "year": 1998
   },
   {
@@ -263,16 +263,16 @@
     "albums": [
       {
         "title": "Janusz Walczuk",
-        "cover": "covers/januszwalczuk.png"
+        "cover": "covers50p/januszwalczuk.png"
       },
       {
         "title": "Jan Walczuk",
-        "cover": "covers/janwalczuk.png"
+        "cover": "covers50p/janwalczuk.png"
       }
     ],
     "labels": ["SBM Label"],
     "gender": "Male",
-    "img": "rapers/januszwalczuk.png",
+    "img": "rapers50p/januszwalczuk.png",
     "year": 1998
   },
   {
@@ -283,12 +283,12 @@
     "albums": [
       {
         "title": "CAMELEO",
-        "cover": "covers/cameleo.png"
+        "cover": "covers50p/cameleo.png"
       }
     ],
-    "labels": ["ZIOMALEO", "SME","INTERNAZIOMALE"],
+    "labels": ["ZIOMALEO", "SME", "INTERNAZIOMALE"],
     "gender": "Male",
-    "img": "rapers/waima.png",
+    "img": "rapers50p/waima.png",
     "year": 2004
   },
   {
@@ -299,24 +299,24 @@
     "albums": [
       {
         "title": "Nowa fala",
-        "cover": "covers/nowafala.png"
+        "cover": "covers50p/nowafala.png"
       },
       {
         "title": "Trapstar",
-        "cover": "covers/trapstar.png"
+        "cover": "covers50p/trapstar.png"
       },
       {
         "title": "Trap After Death",
-        "cover": "covers/trapafterdeath.png"
+        "cover": "covers50p/trapafterdeath.png"
       },
       {
         "title": "Toxic",
-        "cover": "covers/toxic.png"
+        "cover": "covers50p/toxic.png"
       }
     ],
     "labels": ["YoungFamilyLabel", "My Music"],
     "gender": "Male",
-    "img": "rapers/youngmulti.png",
+    "img": "rapers50p/youngmulti.png",
     "year": 1997
   },
   {
@@ -327,12 +327,12 @@
     "albums": [
       {
         "title": "Letnisko",
-        "cover": "covers/letnisko.png"
+        "cover": "covers50p/letnisko.png"
       }
     ],
     "labels": ["SBM Label"],
     "gender": "Male",
-    "img": "rapers/kinnyzimmer.png",
+    "img": "rapers50p/kinnyzimmer.png",
     "year": 1999
   },
   {
@@ -343,24 +343,24 @@
     "albums": [
       {
         "title": "Rockstar",
-        "cover": "covers/rockstar.png"
+        "cover": "covers50p/rockstar.png"
       },
       {
         "title": "Młody książę",
-        "cover": "covers/mlodyksiaze.png"
+        "cover": "covers50p/mlodyksiaze.png"
       },
       {
         "title": "Rockstar: Do zachodu słońca",
-        "cover": "covers/rockstardzs.png"
+        "cover": "covers50p/rockstardzs.png"
       },
       {
         "title": "Pretty Boy",
-        "cover": "covers/prettyboy.png"
+        "cover": "covers50p/prettyboy.png"
       }
     ],
     "labels": ["2115 Label", "SBM Label"],
     "gender": "Male",
-    "img": "rapers/white2115.png",
+    "img": "rapers50p/white2115.png",
     "year": 1996
   },
   {
@@ -371,12 +371,12 @@
     "albums": [
       {
         "title": "Big Mommy",
-        "cover": "covers/bigmommy.png"
+        "cover": "covers50p/bigmommy.png"
       }
     ],
     "labels": ["Warner Music Group"],
     "gender": "Female",
-    "img": "rapers/oliwkabrazil.png",
+    "img": "rapers50p/oliwkabrazil.png",
     "year": 2001
   },
   {
@@ -386,36 +386,36 @@
     "albums": [
       {
         "title": "Serce bije w rytm",
-        "cover": "covers/sercebijewrytm.png"
+        "cover": "covers50p/sercebijewrytm.png"
       },
       {
         "title": "NNJL",
-        "cover": "covers/nnjl.png"
+        "cover": "covers50p/nnjl.png"
       },
       {
         "title": "Ameba",
-        "cover": "covers/ameba.png"
+        "cover": "covers50p/ameba.png"
       },
       {
         "title": "247365",
-        "cover": "covers/247365.png"
+        "cover": "covers50p/247365.png"
       },
       {
         "title": "Bohema",
-        "cover": "covers/bohema.png"
+        "cover": "covers50p/bohema.png"
       },
       {
         "title": "Stamina",
-        "cover": "covers/stamina.png"
+        "cover": "covers50p/stamina.png"
       },
       {
         "title": "Anatema",
-        "cover": "covers/anatema.png"
+        "cover": "covers50p/anatema.png"
       }
     ],
     "labels": ["NNJL", "BOR Records"],
     "gender": "Male",
-    "img": "rapers/gedz.png",
+    "img": "rapers50p/gedz.png",
     "year": 1990
   },
   {
@@ -426,28 +426,28 @@
     "albums": [
       {
         "title": "Atypowy",
-        "cover": "covers/atypowy.png"
+        "cover": "covers50p/atypowy.png"
       },
       {
         "title": "Dzieci duchy",
-        "cover": "covers/dzieciduchy.png"
+        "cover": "covers50p/dzieciduchy.png"
       },
       {
         "title": "Różowa pantera",
-        "cover": "covers/rozowapantera.png"
+        "cover": "covers50p/rozowapantera.png"
       },
       {
         "title": "Dom dla zmyślonych przyjaciół pana Mateusza",
-        "cover": "covers/domdlazmyslonychprzyjaciolpanamateusza.png"
+        "cover": "covers50p/domdlazmyslonychprzyjaciolpanamateusza.png"
       },
       {
         "title": "Uzumaki forma ostateczna",
-        "cover": "covers/uzumakiformaostateczna.png"
+        "cover": "covers50p/uzumakiformaostateczna.png"
       }
     ],
     "labels": ["GUGU", "BOR Records"],
     "gender": "Male",
-    "img": "rapers/szpaku.png",
+    "img": "rapers50p/szpaku.png",
     "year": 1994
   },
   {
@@ -458,40 +458,40 @@
     "albums": [
       {
         "title": "Ortalion",
-        "cover": "covers/ortalion.png"
+        "cover": "covers50p/ortalion.png"
       },
       {
         "title": "Czempion",
-        "cover": "covers/czempion.png"
+        "cover": "covers50p/czempion.png"
       },
       {
         "title": "Pegaz",
-        "cover": "covers/pegaz.png"
+        "cover": "covers50p/pegaz.png"
       },
       {
         "title": "Złoto i biel",
-        "cover": "covers/zlotoibiel.png"
+        "cover": "covers50p/zlotoibiel.png"
       },
       {
         "title": "Posejdon",
-        "cover": "covers/posejdon.png"
+        "cover": "covers50p/posejdon.png"
       },
       {
         "title": "Jeszcze pięć minut",
-        "cover": "covers/jeszczepiecminut.png"
+        "cover": "covers50p/jeszczepiecminut.png"
       },
       {
         "title": "Ostatni taniec",
-        "cover": "covers/ostatnitaniec.png"
+        "cover": "covers50p/ostatnitaniec.png"
       },
       {
         "title": "Patocelebryta",
-        "cover": "covers/patocelebryta.png"
+        "cover": "covers50p/patocelebryta.png"
       }
     ],
     "labels": ["Universal Music Polska", "Spacerange", "Soul Records"],
     "gender": "Male",
-    "img": "rapers/kizo.png",
+    "img": "rapers50p/kizo.png",
     "year": 1994
   },
   {
@@ -502,44 +502,44 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       }
     ],
     "labels": ["Narkopop", "Step Records"],
     "gender": "Male",
-    "img": "rapers/kazbalagane.png",
+    "img": "rapers50p/kazbalagane.png",
     "year": 1988
   },
   {
@@ -550,36 +550,36 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       }
     ],
     "labels": ["Koka Beats", "Asfalt Records"],
     "gender": "Male",
-    "img": "rapers/pezet.png",
+    "img": "rapers50p/pezet.png",
     "year": 1980
   },
   {
@@ -590,20 +590,20 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       }
     ],
     "labels": ["Ekipa", "Spacerange"],
     "gender": "Male",
-    "img": "rapers/qry.png",
+    "img": "rapers50p/qry.png",
     "year": 1999
   },
   {
@@ -614,48 +614,48 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       }
     ],
     "labels": ["Spacerange", "NewBadLabel", "StoproRap"],
     "gender": "Male",
-    "img": "rapers/borixon.png",
+    "img": "rapers50p/borixon.png",
     "year": 1977
   },
   {
@@ -666,20 +666,20 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       }
     ],
     "labels": ["..."],
     "gender": "Male",
-    "img": "rapers/edzio.png",
+    "img": "rapers50p/edzio.png",
     "year": 1995
   },
   {
@@ -690,24 +690,24 @@
     "albums": [
       {
         "title": "K R U K",
-        "cover": "covers/kruk.png"
+        "cover": "covers50p/kruk.png"
       },
       {
         "title": "BOA",
-        "cover": "covers/boa.png"
+        "cover": "covers50p/boa.png"
       },
       {
         "title": "W samo południe",
-        "cover": "covers/wsamopoludnie.png"
+        "cover": "covers50p/wsamopoludnie.png"
       },
       {
         "title": "STYXXX",
-        "cover": "covers/styxxx.png"
+        "cover": "covers50p/styxxx.png"
       }
     ],
     "labels": ["Spacerange", "NewBadLabel"],
     "gender": "Male",
-    "img": "rapers/reto.png",
+    "img": "rapers50p/reto.png",
     "year": 1995
   },
   {
@@ -718,88 +718,88 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       }
     ],
     "labels": ["Wielkie Joł", "Asfalt Records"],
     "gender": "Male",
-    "img": "rapers/tede.png",
+    "img": "rapers50p/tede.png",
     "year": 1976
   },
   {
@@ -810,60 +810,60 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       }
     ],
     "labels": ["BOR Records"],
     "gender": "Male",
-    "img": "rapers/paluch.png",
+    "img": "rapers50p/paluch.png",
     "year": 1985
   },
   {
@@ -874,28 +874,28 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       }
     ],
     "labels": ["RPS Enterteyment", "Fonografika"],
     "gender": "Male",
-    "img": "rapers/peja.png",
+    "img": "rapers50p/peja.png",
     "year": 1976
   },
   {
@@ -906,16 +906,16 @@
     "albums": [
       {
         "title": "Mowa węży",
-        "cover": "covers/mowawezy.png"
+        "cover": "covers50p/mowawezy.png"
       },
       {
         "title": "All Day Fresh",
-        "cover": "covers/alldayfresh.png"
+        "cover": "covers50p/alldayfresh.png"
       }
     ],
     "labels": ["e-Muzyka"],
     "gender": "Male",
-    "img": "rapers/asster.png",
+    "img": "rapers50p/asster.png",
     "year": 2004
   },
   {
@@ -926,12 +926,12 @@
     "albums": [
       {
         "title": "Smak wakacji",
-        "cover": "covers/smakwakacji.png"
+        "cover": "covers50p/smakwakacji.png"
       }
     ],
     "labels": ["Miejska Jungla", "GM2L"],
     "gender": "Male",
-    "img": "rapers/alberto.png",
+    "img": "rapers50p/alberto.png",
     "year": 1993
   },
   {
@@ -942,16 +942,16 @@
     "albums": [
       {
         "title": "Gucci Trip",
-        "cover": "covers/guccitrip.png"
+        "cover": "covers50p/guccitrip.png"
       },
       {
         "title": "Prezes",
-        "cover": "covers/prezes.png"
+        "cover": "covers50p/prezes.png"
       }
     ],
     "labels": ["SBM Label"],
     "gender": "Male",
-    "img": "rapers/jacus.png",
+    "img": "rapers50p/jacus.png",
     "year": 2002
   },
   {
@@ -962,32 +962,32 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       }
     ],
     "labels": ["Brain Dead Familia"],
     "gender": "Male",
-    "img": "rapers/slon.png",
+    "img": "rapers50p/slon.png",
     "year": 1983
   },
   {
@@ -998,16 +998,16 @@
     "albums": [
       {
         "title": "Klub 27",
-        "cover": "covers/klub27.png"
+        "cover": "covers50p/klub27.png"
       },
       {
         "title": "Pokój zero",
-        "cover": "covers/pokojzero.png"
+        "cover": "covers50p/pokojzero.png"
       }
     ],
     "labels": ["SBM Label", "Prosto"],
     "gender": "Male",
-    "img": "rapers/solar.png",
+    "img": "rapers50p/solar.png",
     "year": 1989
   },
   {
@@ -1018,44 +1018,44 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       }
     ],
     "labels": ["Antihype", "Asfalt Records"],
     "gender": "Male",
-    "img": "rapers/sarius.png",
+    "img": "rapers50p/sarius.png",
     "year": 1992
   },
   {
@@ -1066,32 +1066,32 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "Morda nie szklanka",
-        "cover": "covers/mordanieszklanka.png"
+        "cover": "covers50p/mordanieszklanka.png"
       }
     ],
     "labels": ["GM2L"],
     "gender": "Male",
-    "img": "rapers/diho.png",
+    "img": "rapers50p/diho.png",
     "year": 1985
   },
   {
@@ -1102,44 +1102,44 @@
     "albums": [
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "None",
-        "cover": "covers/none.png"
+        "cover": "covers50p/none.png"
       },
       {
         "title": "Pleśń",
-        "cover": "covers/plesn.png"
+        "cover": "covers50p/plesn.png"
       }
     ],
     "labels": ["EVILTWINcorp", "QueQuality"],
     "gender": "Male",
-    "img": "rapers/guzior.png",
+    "img": "rapers50p/guzior.png",
     "year": 1992
   },
   {
-    "id": 36,
+    "id": 37,
     "name": "Żabson",
     "placeofbirth": "Opoczno",
     "voivodeship": "Łódzkie",
     "albums": [
       {
         "title": "To ziomal",
-        "cover": "covers/toziomal.png"
+        "cover": "covers50p/toziomal.png"
       },
       {
         "title": "Internaziomal",
-        "cover": "covers/internaziomal.png"
+        "cover": "covers50p/internaziomal.png"
       },
       {
         "title": "Ostatni ziomal",
-        "cover": "covers/ostatniziomal.png"
+        "cover": "covers50p/ostatniziomal.png"
       }
     ],
     "labels": ["INTERNAZIOMALE"],
     "gender": "Male",
-    "img": "rapers/zabson.png",
+    "img": "rapers50p/zabson.png",
     "year": 1994
   }
 ]

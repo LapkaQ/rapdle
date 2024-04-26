@@ -10,7 +10,7 @@ export default function Game({ params }) {
   const [filtredData, setFiltredData] = useState([]);
   const [guessedData, setGuessedData] = useState([]);
   const [isLoading, setLoading] = useState(true);
-  const [randomCover, setRandomCover] = useState({})
+  const [randomCover, setRandomCover] = useState({});
   const [mode, setMode] = useState(
     params.mode == "normal"
       ? "normal"
@@ -36,28 +36,30 @@ export default function Game({ params }) {
       const randomRapper = data[Math.floor(Math.random() * data.length)];
       let randomAlbum;
       do {
-        const randomIndex = Math.floor(Math.random() * randomRapper.albums.length);
+        const randomIndex = Math.floor(
+          Math.random() * randomRapper.albums.length
+        );
         randomAlbum = randomRapper.albums[randomIndex];
       } while (randomAlbum.title === "None");
       setRandomCover(randomAlbum);
       console.log(randomAlbum);
     }
   }, [data]);
-    return(
-        mode !== "404" && (
-            <main className="flex flex-col h-auto grow relative">
+  return (
+    mode !== "404" && (
+      <main className="flex flex-col h-auto grow relative">
         <h1>Cover {params.mode}</h1>
         <Image
-              src={"/" + randomCover.cover}
-              alt={randomCover.cover}
-              width={200}
-              height={200}
-              loading="eager"
-              unoptimized={false}
-              className=" p-2 rounded-3xl"
-            />
+          src={"/" + randomCover.cover}
+          alt={"elo zelo"}
+          width={400}
+          height={400}
+          loading="eager"
+          unoptimized={false}
+          className=" p-2 rounded-3xl"
+        />
         <h1 className="font-bold text-xl">{randomCover.title}</h1>
-        </main>
+      </main>
     )
-)
+  );
 }

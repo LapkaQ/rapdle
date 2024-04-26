@@ -47,6 +47,7 @@ export default function Home() {
           alt={raper.img}
           loading="eager"
           unoptimized={false}
+          priority={true}
         />
         <h1 className="font-bold text-2xl">{raper.name}</h1>
         <br />
