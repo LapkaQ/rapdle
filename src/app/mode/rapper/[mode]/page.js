@@ -15,6 +15,7 @@ export default function Game({ params }) {
   );
 
   const [data, setData] = useState([]);
+  const [dataBK, setDataBK] = useState([]);
   const [filtredData, setFiltredData] = useState([]);
   const [guessedData, setGuessedData] = useState([]);
   const [isLoading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ export default function Game({ params }) {
         .then((res) => res.json())
         .then((data) => {
           setData(data);
+          setDataBK(data);
           setLoading(false);
         });
     }
@@ -137,9 +139,10 @@ export default function Game({ params }) {
       </div>
     );
   };
-  const LoseAlert = () => {
+  const LoseAlert = (props) => {
+    const { instant } = props; // Otrzymywanie argumentu "instant" z props
     return (
-      <div className="blurbg animate-fadeIn3">
+      <div className={`blurbg ${!instant && "animate-fadeIn1"}`}>
         <div className="alertInfo loseAlert">
           Przegrałeś!
           <button id="buttonCloseAlert" onClick={closeAlert}>
@@ -161,6 +164,14 @@ export default function Game({ params }) {
       </div>
     );
   };
+  const RestartGame = () => {
+    const randomRaper = data[Math.floor(Math.random() * data.length)];
+    setRandomRaper(randomRaper);
+    setDisabled(false);
+    setInputValue("");
+    setGuessedData([]);
+    setData(dataBK);
+  };
   return (
     mode !== "404" && (
       <main className="flex flex-col h-auto grow relative">
@@ -178,6 +189,17 @@ export default function Game({ params }) {
         {(isWin && <WinAlert />) || (isLose && <LoseAlert />)}
         <div className="flex flex-col justify-center items-center content">
           <h1 className="font-black text-2xl">Zgadnij dzisiejszego rapera</h1>
+          {mode === "freestyle" && (
+            <p
+              onClick={
+                !disabled ? () => setIsLose(true, "instant") : RestartGame
+              }
+              className="cursor-pointer animate-pulse"
+            >
+              {!disabled ? "poddaj się" : "zagraj ponownie"}
+            </p>
+          )}
+
           <input
             className="guessInput"
             type="text"
