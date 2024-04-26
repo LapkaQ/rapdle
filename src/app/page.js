@@ -21,7 +21,6 @@ export default function Home() {
       .filter((album) => album.title !== "None")
       .map((album) => (
         <div key={album.title} className="flex flex-row items-start ">
-          {/* <img src={album.cover} alt={album.title} className="w-5" /> */}
           <Image
             src={"/" + album.cover}
             width={25}

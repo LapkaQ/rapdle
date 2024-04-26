@@ -201,7 +201,6 @@ export default function Game({ params }) {
                   key={raper.id}
                   onClick={() => handleClick(raper)}
                 >
-                  {/* <img src={raper.img} className="w-20 p-2 rounded-3xl" alt="" /> */}
                   <Image
                     src={"/" + raper.img}
                     alt={raper.img}
@@ -383,11 +382,6 @@ export default function Game({ params }) {
                       <h1 className="icon material-symbols-outlined">
                         {raper.albums.length !== randomRaper.albums.length ? (
                           raper.albums.length < randomRaper.albums.length ? (
-                            // <img
-                            //   className="opacity-20"
-                            //   src="icons/arrowup.png"
-                            //   alt="Arrow Up"
-                            // />
                             <Image
                               src="/icons/arrowup.png"
                               alt="Arrow Up"
@@ -398,11 +392,6 @@ export default function Game({ params }) {
                               className={`opacity-20`}
                             />
                           ) : (
-                            // <img
-                            //   className="opacity-20"
-                            //   src="icons/arrowdown.png"
-                            //   alt="Arrow Down"
-                            // />
                             <Image
                               src="/icons/arrowdown.png"
                               alt="Arrow Down"
