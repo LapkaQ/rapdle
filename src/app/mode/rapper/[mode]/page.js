@@ -127,6 +127,7 @@ export default function Game({ params }) {
               loading="eager"
               unoptimized={false}
               className="w-20 p-2 rounded-3xl"
+              priority={true}
             />
             <p className="">{randomRaper.name}</p>
           </div>

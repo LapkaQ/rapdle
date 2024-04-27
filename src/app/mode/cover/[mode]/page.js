@@ -38,7 +38,6 @@ export default function Game({ params }) {
       let randomIndex;
       do {
         const randomRapper = data[Math.floor(Math.random() * data.length)];
-        randomRaper = data[37];
         randomIndex = Math.floor(Math.random() * randomRapper.albums.length);
         randomAlbum = randomRapper.albums[randomIndex];
         console.log(randomIndex);
@@ -62,6 +61,7 @@ export default function Game({ params }) {
           loading="eager"
           unoptimized={false}
           className=" p-2 rounded-3xl m-2"
+          priority={true}
         />{" "}
         <div className="flex flex-col justify-center items-center content">
           <input

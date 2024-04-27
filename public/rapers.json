@@ -1141,16 +1141,5 @@
     "gender": "Male",
     "img": "rapers50p/zabson.png",
     "year": 1994
-  },
-  {
-    "id": 38,
-    "name": "Young Todor",
-    "placeofbirth": "Zwierki",
-    "voivodeship": "Podlaskie",
-    "albums": [],
-    "labels": ["Zwierki junajted"],
-    "gender": "Male",
-    "img": "rapers50p/youngtodor.png",
-    "year": 2007
   }
 ]
