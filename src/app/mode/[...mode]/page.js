@@ -582,6 +582,19 @@ export default function Page({ params }) {
           <div className="flex flex-col justify-center items-center">
             <div className="mainInfoGame">
               <p className="font-black text-xl">Tryb: {category}</p>
+              {category == "normal" && (
+                <div
+                  className={`attemptsLeft relative flex flex-col justify-center items-center ${
+                    guessedData.length == 5 ? "incorrect" : "correct"
+                  }`}
+                >
+                  <h1 className="font-light text-xl">Próby:</h1>
+                  <h1 className="font-black text-5xl">
+                    {" "}
+                    {5 - guessedData.length}
+                  </h1>
+                </div>
+              )}
               <h1 className="font-black text-2xl">Zgadnij dzisiejszy album</h1>
             </div>
             {category === "freestyle" && (
