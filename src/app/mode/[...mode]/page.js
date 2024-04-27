@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { Pixelify } from "react-pixelify";
 
 import Image from "next/image";
 import InfoTip from "../../components/InfoTip";
@@ -620,7 +621,7 @@ export default function Page({ params }) {
                 className={`filterImage ${
                   !disabled
                     ? guessedData.length == 0
-                      ? "blur1"
+                      ? "blur1 "
                       : guessedData.length == 1
                       ? "blur2"
                       : guessedData.length == 2
@@ -635,17 +636,34 @@ export default function Page({ params }) {
                     : "blur7"
                 }`}
               ></div>
-              <Image
+              <Pixelify
                 src={"/" + randomCover.cover}
-                alt={"/" + randomCover.cover}
                 width={400}
                 height={400}
-                loading="eager"
-                unoptimized={false}
-                className="rounded-3xl "
-                priority={true}
-              />
+                centered={true}
+                pixelSize={
+                  !disabled
+                    ? guessedData.length == 0
+                      ? 100
+                      : guessedData.length == 1
+                      ? 80
+                      : guessedData.length == 2
+                      ? 60
+                      : guessedData.length == 3
+                      ? 40
+                      : guessedData.length == 4
+                      ? 20
+                      : guessedData.length == 5
+                      ? 10
+                      : guessedData.length == 6
+                      ? 5
+                      : guessedData.length >= 7 && 0
+                    : 0
+                }
+                fillTransparencyColor={"Transparent"}
+              ></Pixelify>
             </div>
+
             <input
               className="guessInput"
               type="text"
