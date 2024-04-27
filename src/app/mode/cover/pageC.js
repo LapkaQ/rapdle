@@ -13,9 +13,9 @@ export default function GameCover({ params }) {
   const [randomCover, setRandomCover] = useState({});
   const [randomRapper, setRandomRapper] = useState({});
   const [mode, setMode] = useState(
-    params.modet == "normal"
+    params.mode == "normal1"
       ? "normal"
-      : params.modet == "freestyle"
+      : params.mode == "freestyle1"
       ? "freestyle"
       : "404"
   );

@@ -7,9 +7,9 @@ import InfoTip from "../../../components/InfoTip";
 export default function GameRapper({ params }) {
   const router = useRouter();
   const [mode, setMode] = useState(
-    params.mode == "normal"
+    params.mode == "normal1"
       ? "normal"
-      : params.mode == "freestyle"
+      : params.mode == "freestyle1"
       ? "freestyle"
       : "404"
   );
