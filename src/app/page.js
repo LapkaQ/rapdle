@@ -42,10 +42,9 @@ export default function Home() {
           src={"/" + raper.img}
           width={240}
           height={240}
-          quality={100}
+          quality={70}
           alt={raper.img}
           loading="eager"
-          unoptimized={false}
           priority={true}
         />
         <h1 className="font-bold text-2xl">{raper.name}</h1>
