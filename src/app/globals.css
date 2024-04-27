@@ -73,6 +73,15 @@ main {
   width: 100%;
   padding: 10px;
 }
+
+.albumsHints {
+  background-color: transparent;
+  border: 3px solid white;
+  margin: 10px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
 .guessedInfo {
   margin: 5px;
   border-radius: 20px;

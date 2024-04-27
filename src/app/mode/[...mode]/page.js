@@ -80,7 +80,6 @@ export default function Page({ params }) {
         const randomRapper = data[Math.floor(Math.random() * data.length)];
         randomIndex = Math.floor(Math.random() * randomRapper.albums.length);
         randomAlbum = randomRapper.albums[randomIndex];
-        console.log(randomAlbum);
         setRandomRapper(randomRapper);
       } while (randomAlbum.title === "None");
 
@@ -95,41 +94,62 @@ export default function Page({ params }) {
       ? (filtered = data.filter((rapper) =>
           rapper.name.toLowerCase().startsWith(e.target.value.toLowerCase())
         ))
-      : (filtered = data.flatMap(
-          (rapper) =>
-            rapper.albums.filter(
-              (album) =>
-                album.title
-                  .toLowerCase()
-                  .startsWith(e.target.value.toLowerCase()) &&
-                album.title !== "None"
-            )
-          // .map((album) => ({ ...rapper, album }))
+      : (filtered = data.flatMap((rapper) =>
+          rapper.albums.filter(
+            (album) =>
+              album.title
+                .toLowerCase()
+                .startsWith(e.target.value.toLowerCase()) &&
+              album.title !== "None"
+          )
         ));
     setFiltredData(filtered);
-    console.log(filtered);
   };
   //Klikniecie w inputa
-  const handleClick = (raper) => {
-    const newGuessedData = [...guessedData, raper];
-    setGuessedData(newGuessedData);
+  const handleClick = (rapper) => {
+    let newGuessedData;
+    let updatedFilteredData;
+    let updatedData;
 
-    const updatedFilteredData = filtredData.filter(
-      (rapper) => rapper.id !== raper.id
-    );
-    setFiltredData(updatedFilteredData);
+    if (mode === "rapper") {
+      newGuessedData = [...guessedData, rapper];
+      setGuessedData(newGuessedData);
 
-    const updatedData = data.filter((rapper) => rapper.id !== raper.id);
-    setData(updatedData);
+      updatedFilteredData = filtredData.filter((r) => r.id !== rapper.id);
+      setFiltredData(updatedFilteredData);
 
-    if (raper.id === randomRapper.id) {
-      setIsWin(true);
-    }
-    if (category == "normal" && guessedData.length > 3) {
-      setIsLose(true);
+      updatedData = data.filter((r) => r.id !== rapper.id);
+      setData(updatedData);
+
+      if (rapper.id === randomRapper.id) {
+        setIsWin(true);
+      }
+      if (category === "normal" && guessedData.length > 3) {
+        setIsLose(true);
+      }
+    } else if (mode === "cover") {
+      newGuessedData = [...guessedData, rapper];
+      console.log(newGuessedData);
+      setGuessedData(newGuessedData);
+      updatedFilteredData = filtredData.filter((r) => r.title !== rapper.title);
+      setFiltredData(updatedFilteredData);
+      updatedData = data.map((r) => ({
+        ...r,
+        albums: r.albums.filter((a) => a.title !== rapper.title),
+      }));
+      console.log(updatedData);
+      setData(updatedData);
+
+      if (rapper.title === randomCover.title) {
+        setIsWin(true);
+      }
+      if (category === "normal" && guessedData.length > 3) {
+        setIsLose(true);
+      }
     }
     setInputValue("");
   };
+
   // Klikniecie Enter w inpucie
   const enterClick = (e) => {
     if (e.key == "Enter") {
@@ -162,25 +182,45 @@ export default function Page({ params }) {
   // Alert z wygraną
   const WinAlert = () => {
     return (
-      <div className="blurbg animate-fadeIn7">
+      <div
+        className={`blurbg ${
+          mode === "rapper" ? "animate-fadeIn7" : "animate-fadeIn3"
+        }`}
+      >
         <div className="alertInfo winAlert">
           Wygrałeś!
           <button id="buttonCloseAlert" onClick={closeAlert}>
             X
           </button>
-          <div className="flex flex-row font-normal">
-            <Image
-              src={"/" + randomRapper.img}
-              alt={randomRapper.img}
-              width={80}
-              height={80}
-              loading="eager"
-              unoptimized={false}
-              className="w-20 p-2 rounded-3xl"
-              priority={true}
-            />
-            <p className="">{randomRapper.name}</p>
-          </div>
+          {mode === "rapper" ? (
+            <div className="flex flex-row font-normal">
+              <Image
+                src={"/" + randomRapper.img}
+                alt={randomRapper.img}
+                width={80}
+                height={80}
+                loading="eager"
+                unoptimized={false}
+                className="w-20 p-2 rounded-3xl"
+                priority={true}
+              />
+              <p className="">{randomRapper.name}</p>
+            </div>
+          ) : (
+            <div className="flex flex-row font-normal">
+              <Image
+                src={"/" + randomCover.cover}
+                alt={randomCover.cover}
+                width={80}
+                height={80}
+                loading="eager"
+                unoptimized={false}
+                className="w-20 p-2 rounded-3xl"
+                priority={true}
+              />
+              <p className="">{randomCover.title}</p>
+            </div>
+          )}
           <div className="flex flex-row font-normal">
             <div className="flex flex-row gap-5">
               Próby: <p className="font-bold">{guessedData.length}</p>
@@ -200,18 +240,35 @@ export default function Page({ params }) {
           <button id="buttonCloseAlert" onClick={closeAlert}>
             X
           </button>
-          <div className="flex flex-row font-normal">
-            <Image
-              src={"/" + randomRapper.img}
-              alt={randomRapper.img}
-              width={80}
-              height={80}
-              loading="eager"
-              unoptimized={false}
-              className="w-20 p-2 rounded-3xl"
-            />
-            <p className="">{randomRapper.name}</p>
-          </div>
+          {mode === "rapper" ? (
+            <div className="flex flex-row font-normal">
+              <Image
+                src={"/" + randomRapper.img}
+                alt={randomRapper.img}
+                width={80}
+                height={80}
+                loading="eager"
+                unoptimized={false}
+                className="w-20 p-2 rounded-3xl"
+                priority={true}
+              />
+              <p className="">{randomRapper.name}</p>
+            </div>
+          ) : (
+            <div className="flex flex-row font-normal">
+              <Image
+                src={"/" + randomCover.cover}
+                alt={randomCover.cover}
+                width={80}
+                height={80}
+                loading="eager"
+                unoptimized={false}
+                className="w-20 p-2 rounded-3xl"
+                priority={true}
+              />
+              <p className="">{randomCover.title}</p>
+            </div>
+          )}
         </div>
       </div>
     );
@@ -521,7 +578,7 @@ export default function Page({ params }) {
     case "cover":
       return category !== "404" ? (
         <main className="flex flex-col h-auto grow relative">
-          {" "}
+          {(isWin && <WinAlert />) || (isLose && <LoseAlert />)}
           <div className="flex flex-col justify-center items-center">
             <div className="mainInfoGame">
               <p className="font-black text-xl">Tryb: {category}</p>
@@ -553,7 +610,7 @@ export default function Page({ params }) {
               onChange={handleChange}
               disabled={isWin || isLose ? true : disabled}
               value={inputValue}
-              // onKeyDown={enterClick}
+              onKeyDown={enterClick}
             />
             {/* LISA ALBUMOW */}
             {inputValue != 0 && filtredData.length > 0 && (
@@ -571,9 +628,49 @@ export default function Page({ params }) {
                 ))}
               </div>
             )}
-          </div>
-          <div className="absolute bottom-0 left-0 text-transparent	hover:text-inherit bg-black p-2 rounded-2xl">
-            {randomRapper.name} {randomCover.title}
+            {/* KLIKNIETE ALBUMY */}
+            {guessedData.length > 0 && (
+              <>
+                <div className="albumsHints">
+                  {guessedData.map((album, index) => (
+                    <div
+                      className="flex flex-row items-center justify-between"
+                      key={album.title}
+                    >
+                      {/* IMG COVER */}
+                      <Image
+                        src={"/" + album.cover}
+                        alt={album.cover}
+                        width={80}
+                        height={80}
+                        loading="eager"
+                        unoptimized={false}
+                        className={`guessedInfo relative animate-fadeIn1 ${
+                          album.cover !== randomCover.cover
+                            ? "incorrect"
+                            : "correct"
+                        }`}
+                      />
+                      {/* Title */}
+                      <div className="opacity-0 flex justify-center relative animate-fadeIn2 w-full ">
+                        <h1
+                          className={`rounded-lg font-black text-center w-auto ${
+                            album.title !== randomCover.title
+                              ? "incorrect"
+                              : "correct"
+                          }`}
+                        >
+                          {album.title}
+                        </h1>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+            <div className="absolute bottom-0 left-0 text-transparent	hover:text-inherit bg-black p-2 rounded-2xl">
+              {randomRapper.name} {randomCover.title}
+            </div>
           </div>
         </main>
       ) : (
