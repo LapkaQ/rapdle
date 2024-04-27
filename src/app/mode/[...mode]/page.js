@@ -275,12 +275,20 @@ export default function Page({ params }) {
   };
   // Restart gry
   const RestartGame = () => {
-    const randomRapper = data[Math.floor(Math.random() * data.length)];
-    setrandomRapper(randomRapper);
     setDisabled(false);
     setInputValue("");
     setGuessedData([]);
     setData(dataBK);
+    let randomAlbum;
+    let randomIndex;
+    do {
+      const randomRapper = data[Math.floor(Math.random() * data.length)];
+      randomIndex = Math.floor(Math.random() * randomRapper.albums.length);
+      randomAlbum = randomRapper.albums[randomIndex];
+      setRandomRapper(randomRapper);
+    } while (randomAlbum.title === "None");
+
+    setRandomCover(randomAlbum);
   };
 
   switch (mode) {
@@ -607,16 +615,37 @@ export default function Page({ params }) {
                 {!disabled ? "poddaj się" : "zagraj ponownie"}
               </p>
             )}
-            <Image
-              src={"/" + randomCover.cover}
-              alt={"elo zelo"}
-              width={400}
-              height={400}
-              loading="eager"
-              unoptimized={false}
-              className="rounded-3xl"
-              priority={true}
-            />{" "}
+            <div className="relative">
+              <div
+                className={`filterImage ${
+                  !disabled
+                    ? guessedData.length == 0
+                      ? "blur1"
+                      : guessedData.length == 1
+                      ? "blur2"
+                      : guessedData.length == 2
+                      ? "blur3"
+                      : guessedData.length == 3
+                      ? "blur4"
+                      : guessedData.length == 4
+                      ? "blur5"
+                      : guessedData.length == 5
+                      ? "blur6"
+                      : guessedData.length >= 6 && "blur7"
+                    : "blur7"
+                }`}
+              ></div>
+              <Image
+                src={"/" + randomCover.cover}
+                alt={"/" + randomCover.cover}
+                width={400}
+                height={400}
+                loading="eager"
+                unoptimized={false}
+                className="rounded-3xl "
+                priority={true}
+              />
+            </div>
             <input
               className="guessInput"
               type="text"
