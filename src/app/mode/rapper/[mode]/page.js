@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 import InfoTip from "../../../components/InfoTip";
-export default function Game({ params }) {
+export default function GameRapper({ params }) {
   const router = useRouter();
   const [mode, setMode] = useState(
     params.mode == "normal"

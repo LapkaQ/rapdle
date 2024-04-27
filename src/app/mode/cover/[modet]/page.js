@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 import Image from "next/image";
 import InfoTip from "../../../components/InfoTip";
-export default function Game({ params }) {
+export default function GameCover({ params }) {
   const router = useRouter();
   const [data, setData] = useState([]);
   const [filtredData, setFiltredData] = useState([]);
@@ -13,9 +13,9 @@ export default function Game({ params }) {
   const [randomCover, setRandomCover] = useState({});
   const [randomRapper, setRandomRapper] = useState({});
   const [mode, setMode] = useState(
-    params.mode == "normal"
+    params.modet == "normal"
       ? "normal"
-      : params.mode == "freestyle"
+      : params.modet == "freestyle"
       ? "freestyle"
       : "404"
   );
