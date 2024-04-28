@@ -400,8 +400,9 @@ export default function Page({ params }) {
                     }`}
                   />
                   <h1 className="font-black text-3xl bottom-3 streakText">
-                    {(category === "normal" && streakRapperNormal) ||
-                      (category === "freestyle" && streakRapperFreestyle)}
+                    {category == "normal"
+                      ? streakRapperNormal
+                      : streakRapperFreestyle}
                   </h1>
                 </div>
               </div>
@@ -721,8 +722,9 @@ export default function Page({ params }) {
                     }`}
                   />
                   <h1 className="font-black text-3xl bottom-3 streakText">
-                    {(category === "normal" && streakCoverNormal) ||
-                      (category === "freestyle" && streakCoverFreestyle)}
+                    {category == "normal"
+                      ? streakCoverNormal
+                      : streakCoverFreestyle}
                   </h1>
                 </div>
               </div>
