@@ -19,7 +19,7 @@ export default function Rules() {
             <div className="font-bold text-2xl ">Inne:</div>
             <div className="text-sm flex  flex-col gap-2">
               <div>
-                <p>Kolor pomarańczowy w kategorii "Label"</p>
+                <p>Kolor pomarańczowy w kategorii &quot;Label&quot;</p>
                 <div className="flex flex-row gap-1 items-center">
                   <div className="middle rounded-md bg-orange-500 w-5 h-5"></div>
                   <p>Mieli wspólną wytwórnię</p>
