@@ -16,7 +16,8 @@ export default function Rules() {
               Kafelki z informacjami są podświetlane na zielono, czerwono lub
               pomarańczowo, w zależności od trafności odpowiedzi.
             </p>
-            <div className="font-bold text-2xl ">Inne:</div>
+            <br />
+            <div className="font-bold text-2xl ">Dodatkowe informacje:</div>
             <div className="text-sm flex  flex-col gap-2">
               <div>
                 <p>Kolor pomarańczowy w kategorii &quot;Label&quot;</p>
@@ -43,10 +44,10 @@ export default function Rules() {
             <div className="font-bold text-2xl ">Opis:</div>
             <p>
               W trybie &quot;Okładka&quot; gracz próbuje rozpoznać okładki
-              albumów, które są rozpikselowane i posiadają zmniejszoną saturację
-              kolorów. Z każdą nieudaną próbą, rozpikselowanie zmniejsza się, a
-              nasycenie kolorów wzrasta. Gracz musi wpisać poprawny tytuł
-              albumu, aby zdobyć punkty.
+              albumów, które zostały zdegradowane poprzez pikselację oraz
+              obniżenie saturacji kolorów. W miarę kolejnych nieudanych prób,
+              stopień pikselacji maleje, zaś intensywność kolorów zwiększa się.
+              Gracz musi wpisać poprawny tytuł albumu, aby zdobyć streaks.
             </p>
           </div>
         </div>
@@ -57,8 +58,8 @@ export default function Rules() {
         <div>
           <p className="font-black text-3xl rulesTextH2">Czym są Streaks?</p>
           <p>
-            Streaks to punkty przyznawane za poprawne odgadnięcie pod rząd tego
-            samego rapera lub albumu. Streaks resetują się po przegranej.
+            Streaks to punkty przyznawane za poprawne odgadnięcie pod rząd
+            rapera lub albumu. Streaks resetują się po przegranej.
           </p>
         </div>
         <div>
