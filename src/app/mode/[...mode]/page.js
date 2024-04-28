@@ -382,6 +382,7 @@ export default function Page({ params }) {
                   </div>
                 )}
                 {/* STREAKS */}
+
                 <div className="relative flex justify-center items-center">
                   <Image
                     src="/images/StreakFire.png"
@@ -495,6 +496,7 @@ export default function Page({ params }) {
                     </div>
                     <div className="categorie relative">
                       {hoveredInfo.label && <InfoTip tekst="labelInfo" />}
+
                       <p
                         onMouseEnter={() => handleMouseEnter("label")}
                         onMouseLeave={() => handleMouseLeave("label")}
@@ -508,7 +510,7 @@ export default function Page({ params }) {
                         onMouseEnter={() => handleMouseEnter("birthplace")}
                         onMouseLeave={() => handleMouseLeave("birthplace")}
                       >
-                        Gdzie urodzony
+                        Miejsce urodzenia
                       </p>
                     </div>
                     <div className="categorie relative">
@@ -736,7 +738,7 @@ export default function Page({ params }) {
                   !disabled
                     ? () => {
                         setIsLose(true, "instant");
-                        ResetStreaks(); // Dodano wywołanie funkcji ResetStreaks
+                        ResetStreaks();
                       }
                     : RestartGame
                 }
