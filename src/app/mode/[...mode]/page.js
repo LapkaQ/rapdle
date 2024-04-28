@@ -54,6 +54,26 @@ export default function Page({ params }) {
     albumy: false,
     plec: false,
   });
+  let value;
+  // Wczytywanie streak rapper normal do local storage
+  value = parseInt(localStorage.getItem("streakRapperNormal")) || 0;
+  const [streakRapperNormal, setStreakRapperNormal] = useState(value);
+  localStorage.setItem("streakRapperNormal", streakRapperNormal);
+
+  // Wczytywanie streak rapper freestyle do local storage
+  value = parseInt(localStorage.getItem("streakRapperFreestyle")) || 0;
+  const [streakRapperFreestyle, setStreakRapperFreestyle] = useState(value);
+  localStorage.setItem("streakRapperFreestyle", streakRapperFreestyle);
+
+  // Wczytywanie streak cover normal do local storage
+  value = parseInt(localStorage.getItem("streakCoverNormal")) || 0;
+  const [streakCoverNormal, setStreakCoverNormal] = useState(value);
+  localStorage.setItem("streakCoverNormal", streakCoverNormal);
+
+  // Wczytywanie streak cover freestyle do local storage
+  value = parseInt(localStorage.getItem("streakCoverFreestyle")) || 0;
+  const [streakCoverFreestyle, setStreakCoverFreestyle] = useState(value);
+  localStorage.setItem("streakCoverFreestyle", streakCoverFreestyle);
   const thisYear = new Date().getFullYear();
   // routing i pobieranie danych
   useEffect(() => {
@@ -108,6 +128,7 @@ export default function Page({ params }) {
   };
   //Klikniecie w inputa
   const handleClick = (rapper) => {
+    console.log(guessedData.length);
     let newGuessedData;
     let updatedFilteredData;
     let updatedData;
@@ -124,13 +145,15 @@ export default function Page({ params }) {
 
       if (rapper.id === randomRapper.id) {
         setIsWin(true);
+        AddStreaks();
+      } else if (guessedData.length > 3 && category === "normal") {
+        ResetStreaks();
       }
       if (category === "normal" && guessedData.length > 3) {
         setIsLose(true);
       }
     } else if (mode === "cover") {
       newGuessedData = [...guessedData, rapper];
-      console.log(newGuessedData);
       setGuessedData(newGuessedData);
       updatedFilteredData = filtredData.filter((r) => r.title !== rapper.title);
       setFiltredData(updatedFilteredData);
@@ -138,11 +161,13 @@ export default function Page({ params }) {
         ...r,
         albums: r.albums.filter((a) => a.title !== rapper.title),
       }));
-      console.log(updatedData);
       setData(updatedData);
 
       if (rapper.title === randomCover.title) {
         setIsWin(true);
+        AddStreaks();
+      } else if (guessedData.length > 3 && category === "normal") {
+        ResetStreaks();
       }
       if (category === "normal" && guessedData.length > 3) {
         setIsLose(true);
@@ -179,6 +204,48 @@ export default function Page({ params }) {
     setIsWin(false);
     setIsLose(false);
     setDisabled(true);
+  };
+  const AddStreaks = () => {
+    mode === "rapper"
+      ? category === "normal"
+        ? ((value =
+            parseInt(localStorage.getItem("streakRapperNormal") || 0) + 1),
+          setStreakRapperNormal(value),
+          localStorage.setItem("streakRapperNormal", value))
+        : guessedData.length <= 4 &&
+          ((value =
+            parseInt(localStorage.getItem("streakRapperFreestyle") || 0) + 1),
+          setStreakRapperFreestyle(value),
+          localStorage.setItem("streakRapperFreestyle", value))
+      : category === "normal"
+      ? ((value = parseInt(localStorage.getItem("streakCoverNormal") || 0) + 1),
+        setStreakCoverNormal(value),
+        localStorage.setItem("streakCoverNormal", value))
+      : guessedData.length <= 4 &&
+        ((value =
+          parseInt(localStorage.getItem("streakCoverFreestyle") || 0) + 1),
+        setStreakCoverFreestyle(value),
+        localStorage.setItem("streakCoverFreestyle", value));
+  };
+  const ResetStreaks = () => {
+    mode === "rapper"
+      ? category === "normal"
+        ? (setStreakRapperNormal(0),
+          localStorage.setItem("streakRapperNormal", 0))
+        : (setStreakRapperFreestyle(0),
+          localStorage.setItem("streakRapperFreestyle", 0))
+      : category === "normal"
+      ? (setStreakCoverNormal(0), localStorage.setItem("streakCoverNormal", 0))
+      : (setStreakCoverFreestyle(0),
+        localStorage.setItem("streakCoverFreestyle", 0));
+    // setStreakCoverFreestyle(0);
+    // setStreakCoverNormal(0);
+    // setStreakRapperNormal(0);
+    // setStreakRapperFreestyle(0);
+    // localStorage.setItem("streakRapperNormal", 0);
+    // localStorage.setItem("streakRapperFreestyle", 0);
+    // localStorage.setItem("streakCoverNormal", 0);
+    // localStorage.setItem("streakCoverFreestyle", 0);
   };
   // Alert z wygraną
   const WinAlert = () => {
@@ -300,19 +367,44 @@ export default function Page({ params }) {
           <div className="flex flex-col justify-center items-center content">
             <div className="mainInfoGame">
               <p className="font-black text-xl">Tryb: {category}</p>
-              {category == "normal" && (
-                <div
-                  className={`attemptsLeft relative flex flex-col justify-center items-center ${
-                    guessedData.length == 5 ? "incorrect" : "correct"
-                  }`}
-                >
-                  <h1 className="font-light text-xl">Próby:</h1>
-                  <h1 className="font-black text-5xl">
-                    {" "}
-                    {5 - guessedData.length}
+              <div className="flex flex-row">
+                {category == "normal" && (
+                  <div
+                    className={`attemptsLeft relative flex flex-col justify-center items-center ${
+                      guessedData.length == 5 ? "incorrect" : "correct"
+                    }`}
+                  >
+                    <h1 className="font-light text-xl">Próby:</h1>
+                    <h1 className="font-black text-5xl">
+                      {" "}
+                      {5 - guessedData.length}
+                    </h1>
+                  </div>
+                )}
+                {/* STREAKS */}
+                <div className="relative flex justify-center items-center">
+                  <Image
+                    src="/images/StreakFire.png"
+                    width={90}
+                    height={90}
+                    quality={100}
+                    className={`duration-500 ${
+                      (category === "normal" &&
+                        (streakRapperNormal === 0
+                          ? "saturate-0"
+                          : "saturate-1")) ||
+                      (category === "freestyle" &&
+                        (streakRapperFreestyle === 0
+                          ? "saturate-0"
+                          : "saturate-1"))
+                    }`}
+                  />
+                  <h1 className="font-black text-3xl bottom-3 streakText">
+                    {(category === "normal" && streakRapperNormal) ||
+                      (category === "freestyle" && streakRapperFreestyle)}
                   </h1>
                 </div>
-              )}
+              </div>
               <h1 className="font-black text-2xl">
                 Zgadnij dzisiejszego rapera
               </h1>
@@ -321,7 +413,12 @@ export default function Page({ params }) {
             {category === "freestyle" && (
               <p
                 onClick={
-                  !disabled ? () => setIsLose(true, "instant") : RestartGame
+                  !disabled
+                    ? () => {
+                        setIsLose(true, "instant");
+                        ResetStreaks(); // Dodano wywołanie funkcji ResetStreaks
+                      }
+                    : RestartGame
                 }
                 className="cursor-pointer animate-pulse"
               >
@@ -591,25 +688,55 @@ export default function Page({ params }) {
           <div className="flex flex-col justify-center items-center">
             <div className="mainInfoGame">
               <p className="font-black text-xl">Tryb: {category}</p>
-              {category == "normal" && (
-                <div
-                  className={`attemptsLeft relative flex flex-col justify-center items-center ${
-                    guessedData.length == 5 ? "incorrect" : "correct"
-                  }`}
-                >
-                  <h1 className="font-light text-xl">Próby:</h1>
-                  <h1 className="font-black text-5xl">
-                    {" "}
-                    {5 - guessedData.length}
+              <div className="flex flex-row">
+                {category == "normal" && (
+                  <div
+                    className={`attemptsLeft relative flex flex-col justify-center items-center ${
+                      guessedData.length == 5 ? "incorrect" : "correct"
+                    }`}
+                  >
+                    <h1 className="font-light text-xl">Próby:</h1>
+                    <h1 className="font-black text-5xl">
+                      {" "}
+                      {5 - guessedData.length}
+                    </h1>
+                  </div>
+                )}
+                {/* STREAKS */}
+                <div className="relative flex justify-center items-center">
+                  <Image
+                    src="/images/StreakFire.png"
+                    width={90}
+                    height={90}
+                    quality={100}
+                    className={`duration-500 ${
+                      (category === "normal" &&
+                        (streakCoverNormal === 0
+                          ? "saturate-0"
+                          : "saturate-1")) ||
+                      (category === "freestyle" &&
+                        (streakCoverFreestyle === 0
+                          ? "saturate-0"
+                          : "saturate-1"))
+                    }`}
+                  />
+                  <h1 className="font-black text-3xl bottom-3 streakText">
+                    {(category === "normal" && streakCoverNormal) ||
+                      (category === "freestyle" && streakCoverFreestyle)}
                   </h1>
                 </div>
-              )}
+              </div>
               <h1 className="font-black text-2xl">Zgadnij dzisiejszy album</h1>
             </div>
             {category === "freestyle" && (
               <p
                 onClick={
-                  !disabled ? () => setIsLose(true, "instant") : RestartGame
+                  !disabled
+                    ? () => {
+                        setIsLose(true, "instant");
+                        ResetStreaks(); // Dodano wywołanie funkcji ResetStreaks
+                      }
+                    : RestartGame
                 }
                 className="cursor-pointer animate-pulse"
               >
