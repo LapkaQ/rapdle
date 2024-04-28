@@ -601,7 +601,7 @@ export default function Page({ params }) {
                             : "incorrect"
                         }`}
                       >
-                        <h1 className="font-black text-center overflow-hidden hover:overflow-visible hover:text-ellipsis">
+                        <h1 className="labelsText font-black text-center text-xs">
                           {raper.labels.length == 1
                             ? raper.labels
                             : raper.labels

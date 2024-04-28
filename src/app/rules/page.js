@@ -8,7 +8,7 @@ export default function Rules() {
             <p className="font-black text-3xl rulesTextH2">
               Gra &quot;Raper&quot;
             </p>
-            <div className="font-bold text-2xl ">Opis:</div>
+            <div className="font-bold text-2xl rulesTextH3">Opis:</div>
             <p>
               W trybie &quot;Raper&quot; gracz stara się zgadnąć tożsamość
               rapera na podstawie różnych kategorii, takich jak wiek, wytwórnia
@@ -17,7 +17,9 @@ export default function Rules() {
               pomarańczowo, w zależności od trafności odpowiedzi.
             </p>
             <br />
-            <div className="font-bold text-2xl ">Dodatkowe informacje:</div>
+            <div className="font-bold text-2xl rulesTextH3">
+              Dodatkowe informacje:
+            </div>
             <div className="text-sm flex  flex-col gap-2">
               <div>
                 <p>Kolor pomarańczowy w kategorii &quot;Label&quot;</p>
@@ -41,7 +43,7 @@ export default function Rules() {
             <p className="font-black text-3xl rulesTextH2">
               Gra &quot;Cover&quot;
             </p>
-            <div className="font-bold text-2xl ">Opis:</div>
+            <div className="font-bold text-2xl rulesTextH3">Opis:</div>
             <p>
               W trybie &quot;Okładka&quot; gracz próbuje rozpoznać okładki
               albumów, które zostały zdegradowane poprzez pikselację oraz
