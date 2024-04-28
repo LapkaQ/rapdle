@@ -81,6 +81,7 @@ export default function Home() {
     );
   });
   console.log(data);
+
   return (
     <main className="flex flex-col items-center flex-wrap justify-center grow">
       <div className="">
