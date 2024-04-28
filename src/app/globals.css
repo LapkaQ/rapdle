@@ -283,3 +283,37 @@ main {
   /* box-shadow: 0px 0px 5px black; */
   border-radius: 20px;
 }
+
+#cc-main {
+  /** Change font **/
+  /* --cc-font-family: Roboto; */
+  --cc-bg: rgb(var(--background-color));
+  --cc-primary-color: rgb(var(--foreground-rgb));
+  --cc-secondary-color: rgb(var(--foreground2-rgb));
+  /** Change button primary color to black **/
+  --cc-btn-primary-bg: linear-gradient(
+    45deg,
+    rgb(var(--theme-rgb)),
+    rgb(var(--theme2-rgb))
+  );
+  --cc-btn-primary-color: rgb(var(--foreground-rgb));
+  --cc-btn-primary-border-color: none;
+  --cc-btn-primary-hover-bg: linear-gradient(
+    45deg,
+    rgb(var(--theme-rgb)),
+    rgb(var(--theme2-rgb))
+  );
+  --cc-btn-primary-hover-color: rgb(var(--foreground-rgb));
+  /** Also make toggles the same color as the button **/
+  --cc-toggle-on-bg: var(--cc-btn-primary-bg);
+
+  /** Make the buttons a bit rounder **/
+  --cc-btn-border-radius: 10px;
+
+  --cc-footer-bg: black;
+}
+#cc-main,
+#cc-main .cm,
+#cc-main .pm {
+  --cc-modal-transition-duration: 1s;
+}
