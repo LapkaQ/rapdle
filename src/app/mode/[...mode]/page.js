@@ -366,16 +366,20 @@ export default function Page({ params }) {
           {(isWin && <WinAlert />) || (isLose && <LoseAlert />)}
           <div className="flex flex-col justify-center items-center content">
             <div className="mainInfoGame">
-              <p className="font-black text-xl">Tryb: {category}</p>
+              <p className="font-black text-xl  max-md:text-base">
+                Tryb: {category}
+              </p>
               <div className="flex flex-row">
                 {category == "normal" && (
                   <div
-                    className={`attemptsLeft relative flex flex-col justify-center items-center ${
+                    className={`attemptsLeft relative flex flex-col justify-center items-center  ${
                       guessedData.length == 5 ? "incorrect" : "correct"
                     }`}
                   >
-                    <h1 className="font-light text-xl">Próby:</h1>
-                    <h1 className="font-black text-5xl">
+                    <h1 className="font-light text-xl max-md:text-sm">
+                      Próby:
+                    </h1>
+                    <h1 className="font-black text-5xl max-md:text-3xl">
                       {" "}
                       {5 - guessedData.length}
                     </h1>
@@ -389,7 +393,7 @@ export default function Page({ params }) {
                     width={90}
                     height={90}
                     quality={100}
-                    className={`duration-500 ${
+                    className={`streakFire duration-500 ${
                       (category === "normal" &&
                         (streakRapperNormal === 0
                           ? "saturate-0"
@@ -407,7 +411,7 @@ export default function Page({ params }) {
                   </h1>
                 </div>
               </div>
-              <h1 className="font-black text-2xl">
+              <h1 className="font-black text-2xl  max-md:text-base">
                 Zgadnij dzisiejszego rapera
               </h1>
             </div>
@@ -422,7 +426,7 @@ export default function Page({ params }) {
                       }
                     : RestartGame
                 }
-                className="cursor-pointer animate-pulse"
+                className="cursor-pointer text-sm animate-pulse max-md:text-xs"
               >
                 {!disabled ? "poddaj się" : "zagraj ponownie"}
               </p>
@@ -458,7 +462,7 @@ export default function Page({ params }) {
                       height={80}
                       loading="eager"
                       unoptimized={false}
-                      className="w-20 p-2 rounded-3xl"
+                      className="w-20 p-2 rounded-3xl max-md:w-14 max-md:rounded-xl"
                     />
                     <h1 className="font-black grow text-center">
                       {raper.name}
@@ -485,7 +489,7 @@ export default function Page({ params }) {
                     </div>
                     <div className="categorie relative">
                       {hoveredInfo.wiek && (
-                        <InfoTip tekst="asdad asdad ada dada dad" />
+                        <InfoTip tekst="asdad asdad ada dada dad " />
                       )}
                       <p
                         onMouseEnter={() => handleMouseEnter("wiek")}
@@ -558,7 +562,7 @@ export default function Page({ params }) {
                             : "correct"
                         }`}
                       >
-                        <h1 className="font-black text-5xl">
+                        <h1 className="font-black text-5xl max-md:text-xl">
                           {thisYear - raper.year}
                         </h1>
                         <h1 className="icon material-symbols-outlined">
@@ -631,7 +635,7 @@ export default function Page({ params }) {
                             : "correct"
                         }`}
                       >
-                        <h1 className="font-black text-5xl">
+                        <h1 className="font-black text-5xl max-md:text-xl">
                           {raper.albums.length}
                         </h1>
                         <h1 className="icon material-symbols-outlined">
@@ -690,7 +694,9 @@ export default function Page({ params }) {
           {(isWin && <WinAlert />) || (isLose && <LoseAlert />)}
           <div className="flex flex-col justify-center items-center">
             <div className="mainInfoGame">
-              <p className="font-black text-xl">Tryb: {category}</p>
+              <p className="font-black text-xl  max-md:text-base">
+                Tryb: {category}
+              </p>
               <div className="flex flex-row">
                 {category == "normal" && (
                   <div
@@ -698,8 +704,10 @@ export default function Page({ params }) {
                       guessedData.length == 5 ? "incorrect" : "correct"
                     }`}
                   >
-                    <h1 className="font-light text-xl">Próby:</h1>
-                    <h1 className="font-black text-5xl">
+                    <h1 className="font-light text-xl max-md:text-sm">
+                      Próby:
+                    </h1>
+                    <h1 className="font-black text-5xl max-md:text-3xl">
                       {" "}
                       {5 - guessedData.length}
                     </h1>
@@ -712,7 +720,7 @@ export default function Page({ params }) {
                     width={90}
                     height={90}
                     quality={100}
-                    className={`duration-500 ${
+                    className={` streakFire duration-500 ${
                       (category === "normal" &&
                         (streakCoverNormal === 0
                           ? "saturate-0"
@@ -730,7 +738,9 @@ export default function Page({ params }) {
                   </h1>
                 </div>
               </div>
-              <h1 className="font-black text-2xl">Zgadnij dzisiejszy album</h1>
+              <h1 className="font-black text-2xl  max-md:text-base">
+                Zgadnij dzisiejszy album
+              </h1>
             </div>
             {category === "freestyle" && (
               <p
@@ -742,7 +752,7 @@ export default function Page({ params }) {
                       }
                     : RestartGame
                 }
-                className="cursor-pointer animate-pulse"
+                className="cursor-pointer text-sm animate-pulse max-md:text-xs"
               >
                 {!disabled ? "poddaj się" : "zagraj ponownie"}
               </p>

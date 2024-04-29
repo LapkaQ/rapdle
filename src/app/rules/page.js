@@ -1,6 +1,6 @@
 export default function Rules() {
   return (
-    <main className="flex flex-row items-center grow justify-center gap-40">
+    <main className="flex flex-row items-center grow justify-center gap-40 max-md:flex-col">
       <div className="tryby w-1/2">
         <h1 className="font-black text-5xl themeGradient">Poradnik</h1>
         <div className="flex flex-row gap-5">

@@ -150,6 +150,45 @@ main {
   align-items: center;
   text-shadow: 0px 0px 2px rgb(255, 255, 255);
 }
+.streakFire {
+  height: 90px;
+  width: 90px;
+}
+@media not all and (min-width: 768px) {
+  .categorie {
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .guessedInfo {
+    width: 40px;
+    height: 40px;
+    font-size: 50%;
+    border-radius: 10px;
+  }
+  .labelsText {
+    font-size: 50%;
+    line-height: 10px;
+  }
+  .attemptsLeft {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  .streakFire {
+    height: 70px;
+    width: 70px;
+  }
+  .streakFire .labelsText::-webkit-scrollbar {
+    display: none;
+  }
+  .labelsText::-webkit-scrollbar-track {
+    display: none;
+  }
+  .labelsText::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
 .blurbg {
   opacity: 0;
   z-index: 99;

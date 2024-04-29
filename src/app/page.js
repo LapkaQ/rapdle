@@ -85,11 +85,11 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center flex-wrap justify-center grow">
       <div className="">
-        <h1 className="font-black text-5xl p-5">
+        <h1 className="font-black text-5xl p-5 flex text-nowrap flex-row items-center justify-center gap-3 max-md:flex-col">
           Welcome to <span className="themeGradient">Rapdle</span>
         </h1>
       </div>
-      <div className="flex flex-row justify-center items-center gap-5 p-5">
+      <div className="flex flex-row justify-center items-center gap-5 p-5 max-md:flex-col">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-2xl font-bold">Rapper</h1>
           <p>Mode:</p>
@@ -122,7 +122,7 @@ export default function Home() {
         Toggle rappers
       </button>
       <div className="flex items-start justify-center flex-wrap">
-        {!isLoading && raperzy}
+        {isLoading && raperzy}
       </div>
     </main>
   );
