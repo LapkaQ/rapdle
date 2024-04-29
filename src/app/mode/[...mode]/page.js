@@ -255,7 +255,7 @@ export default function Page({ params }) {
           mode === "rapper" ? "animate-fadeIn7" : "animate-fadeIn3"
         }`}
       >
-        <div className="alertInfo text-6xl loseAlert py-5 px-24 max-md:py-2 max-md:px-12 max-md:text-2xl">
+        <div className="alertInfo text-6xl winAlert py-5 px-24 max-md:py-2 max-md:px-12 max-md:text-2xl">
           Wygrałeś!
           <button
             id="buttonCloseAlert"
