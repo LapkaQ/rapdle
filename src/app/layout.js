@@ -15,7 +15,6 @@ export default function RootLayout({ children }) {
       <meta charSet="utf-8"></meta>
       <body className="flex h-screen flex-col justify-between">
         <Header />
-        <Cookie />
         {children}
         <Footer />
       </body>
