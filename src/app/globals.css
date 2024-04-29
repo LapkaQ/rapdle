@@ -154,41 +154,7 @@ main {
   height: 90px;
   width: 90px;
 }
-@media not all and (min-width: 768px) {
-  .categorie {
-    width: 40px;
-    height: 30px;
-    font-size: 10px;
-  }
-  .guessedInfo {
-    width: 40px;
-    height: 40px;
-    font-size: 50%;
-    border-radius: 10px;
-  }
-  .labelsText {
-    font-size: 50%;
-    line-height: 10px;
-  }
-  .attemptsLeft {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-  }
-  .streakFire {
-    height: 70px;
-    width: 70px;
-  }
-  .streakFire .labelsText::-webkit-scrollbar {
-    display: none;
-  }
-  .labelsText::-webkit-scrollbar-track {
-    display: none;
-  }
-  .labelsText::-webkit-scrollbar-thumb {
-    display: none;
-  }
-}
+
 .blurbg {
   opacity: 0;
   z-index: 99;
@@ -204,7 +170,7 @@ main {
 }
 .alertInfo {
   position: relative;
-  padding: 20px 100px;
+  /* padding: 20px 100px; */
   border-radius: 20px;
 
   box-shadow: 0px 0px 10px 10px black, 0px 0px;
@@ -212,7 +178,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  /* font-size: 50px; */
   font-weight: 800;
   text-shadow: 0px 0px 2px white;
 }
@@ -229,11 +195,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  /* padding: 30px; */
   top: 0;
   right: 0;
-  height: 50px;
-  width: 50px;
+  /* height: 50px;
+  width: 50px; */
   text-shadow: 0px 0px 2px white;
   background-color: rgb(255, 0, 0, 0.5);
   box-shadow: -5px 5px 10px rgba(255, 0, 0, 0.288);
@@ -353,4 +319,41 @@ main {
 #cc-main .cm,
 #cc-main .pm {
   --cc-modal-transition-duration: 1s;
+}
+
+@media not all and (min-width: 768px) {
+  .categorie {
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .guessedInfo {
+    width: 40px;
+    height: 40px;
+    font-size: 50%;
+    border-radius: 10px;
+  }
+  .labelsText {
+    font-size: 50%;
+    line-height: 10px;
+  }
+  .attemptsLeft {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  .streakFire {
+    height: 70px;
+    width: 70px;
+  }
+
+  .streakFire .labelsText::-webkit-scrollbar {
+    display: none;
+  }
+  .labelsText::-webkit-scrollbar-track {
+    display: none;
+  }
+  .labelsText::-webkit-scrollbar-thumb {
+    display: none;
+  }
 }

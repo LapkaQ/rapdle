@@ -255,13 +255,17 @@ export default function Page({ params }) {
           mode === "rapper" ? "animate-fadeIn7" : "animate-fadeIn3"
         }`}
       >
-        <div className="alertInfo winAlert">
+        <div className="alertInfo text-6xl loseAlert py-5 px-24 max-md:py-2 max-md:px-12 max-md:text-2xl">
           Wygrałeś!
-          <button id="buttonCloseAlert" onClick={closeAlert}>
+          <button
+            id="buttonCloseAlert"
+            className="w-4 h-4 p-8 max-md:h-4 max-md:w-4  max-md:p-5"
+            onClick={closeAlert}
+          >
             X
           </button>
           {mode === "rapper" ? (
-            <div className="flex flex-row font-normal">
+            <div className="flex flex-row font-normal justify-center items-center">
               <Image
                 src={"/" + randomRapper.img}
                 alt={randomRapper.img}
@@ -269,13 +273,15 @@ export default function Page({ params }) {
                 height={80}
                 loading="eager"
                 unoptimized={false}
-                className="w-20 p-2 rounded-3xl"
+                className="p-2 rounded-3xl"
                 priority={true}
               />
-              <p className="">{randomRapper.name}</p>
+              <p className="flex flex-row justify-center items-center max-md:flex-col">
+                {randomRapper.name}
+              </p>
             </div>
           ) : (
-            <div className="flex flex-row font-normal">
+            <div className="flex flex-row font-normal justify-center items-center">
               <Image
                 src={"/" + randomCover.cover}
                 alt={randomCover.cover}
@@ -283,10 +289,12 @@ export default function Page({ params }) {
                 height={80}
                 loading="eager"
                 unoptimized={false}
-                className="w-20 p-2 rounded-3xl"
+                className=" p-2 rounded-3xl"
                 priority={true}
               />
-              <p className="">{randomCover.title}</p>
+              <p className="flex flex-row justify-center items-center max-md:flex-col">
+                {randomCover.title}
+              </p>
             </div>
           )}
           <div className="flex flex-row font-normal">
@@ -303,13 +311,17 @@ export default function Page({ params }) {
     const { instant } = props; // Otrzymywanie argumentu "instant" z props
     return (
       <div className={`blurbg ${!instant && "animate-fadeIn1"}`}>
-        <div className="alertInfo loseAlert">
+        <div className="alertInfo text-5xl loseAlert py-5 px-24 max-md:py-2 max-md:px-12 max-md:text-2xl">
           Przegrałeś!
-          <button id="buttonCloseAlert" onClick={closeAlert}>
+          <button
+            id="buttonCloseAlert"
+            className="w-4 h-4 p-8 max-md:h-4 max-md:w-4  max-md:p-5"
+            onClick={closeAlert}
+          >
             X
           </button>
           {mode === "rapper" ? (
-            <div className="flex flex-row font-normal">
+            <div className=" flex flex-row font-normal justify-center items-center">
               <Image
                 src={"/" + randomRapper.img}
                 alt={randomRapper.img}
@@ -317,13 +329,15 @@ export default function Page({ params }) {
                 height={80}
                 loading="eager"
                 unoptimized={false}
-                className="w-20 p-2 rounded-3xl"
+                className=" p-2 rounded-3xl"
                 priority={true}
               />
-              <p className="">{randomRapper.name}</p>
+              <p className="flex flex-row justify-center items-center max-md:flex-col">
+                {randomRapper.name}
+              </p>
             </div>
           ) : (
-            <div className="flex flex-row font-normal">
+            <div className=" flex flex-row font-normal justify-center items-center">
               <Image
                 src={"/" + randomCover.cover}
                 alt={randomCover.cover}
@@ -331,10 +345,12 @@ export default function Page({ params }) {
                 height={80}
                 loading="eager"
                 unoptimized={false}
-                className="w-20 p-2 rounded-3xl"
+                className="p-2 rounded-3xl"
                 priority={true}
               />
-              <p className="">{randomCover.title}</p>
+              <p className="flex flex-row justify-center items-center max-md:flex-col">
+                {randomCover.title}
+              </p>
             </div>
           )}
         </div>
