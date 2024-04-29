@@ -178,7 +178,7 @@ export default function Page({ params }) {
 
   // Klikniecie Enter w inpucie
   const enterClick = (e) => {
-    if (e.key == "Enter") {
+    if (e.key == "Enter" && inputValue.length > 0) {
       if (filtredData.length > 0) {
         const raper = filtredData[0];
         handleClick(raper);
