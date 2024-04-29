@@ -773,7 +773,7 @@ export default function Page({ params }) {
                 {!disabled ? "poddaj się" : "zagraj ponownie"}
               </p>
             )}
-            <div className="relative">
+            <div className="relative pixeloza">
               <div
                 className={`filterImage ${
                   !disabled
@@ -822,7 +822,7 @@ export default function Page({ params }) {
             </div>
 
             <input
-              className="guessInput"
+              className="guessInputCover"
               type="text"
               onChange={handleChange}
               disabled={isWin || isLose ? true : disabled}
@@ -831,7 +831,7 @@ export default function Page({ params }) {
             />
             {/* LISA ALBUMOW */}
             {inputValue != 0 && filtredData.length > 0 && (
-              <div className="raperHints cursor-pointer flex flex-col gap-2">
+              <div className="albumsHints cursor-pointer flex flex-col gap-2">
                 {filtredData.map((album) => (
                   <div
                     className="flex flex-row items-center justify-between"
